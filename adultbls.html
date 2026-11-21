@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BLS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- My stuff -->
+<link rel="stylesheet" href="shared.css">
+<script src="shared.js" defer></script>
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+
+</style>
+</head>
+<body>
+  <!-- Scroll button -->
+<button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <!-- Menu button -->
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <!--Header Title: Removes underline from <a/>, removes hand cursor when hover over with mouse pointer, adjust title wording by width -->
+    <a href="#" class="w3-bar-item w3-hide-small  w3-hide-medium" style="text-decoration: none; cursor: default;">Cardiopulmonary Resuscitation with Visual Mnemonics</a>
+    <a href="#" class="w3-bar-item  w3-hide-large" style="text-decoration: none; cursor: default;">CPR with Memory Methods</a>
+  </div>
+</div>
+
+<!-- Sidebar with Menu -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black sectionbtn" href="javascript:void(0)"><b>Memory Systems</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn " href="index.html">Introduction</a>  
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="memorysystems.html">Visual Mnemonics</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="numbers.html">Numbers</a>
+  <a class="w3-bar-item w3-button w3-hover-black  indentedbtn" href="numbersmore.html">More Numbers</a>
+  <a class="w3-bar-item w3-button w3-hover-black sectionbtn" href="javascript:void(0)"><b>Adult Basic Life Support</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn selectedbtn" href="adultbls.html">Visual Mnemonics</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="#">Link</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="#">Link</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="#">Link</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Adult Basic Life Support</h1>
+      <p>This is the 2025 adult basic life support flowchart. To make it easy to use memory methods we will disect the flowchart apart into categories of findings and actions and create images of each. Then to organize the flow of the flowchart we will create flowchart room map. Finally we will link the images in the room map to recreate the .</p>
+      <p>Also it is very important to note there is much more to Adult Basic Life Support than a flow chart. You should still take periodically a supravised cousre to learn and maintain techniques bur you will find knowing the flowchart make sit much easier. </p>
+        <img class="resized-image" src="images/adultbls.jpg" alt="Adult Basic Life Support">   
+        <p style="text-align: center;" ><b>Figure 1</b></p>
+        <!-- <img src="images/adultbls.jpg" alt="Adult Basic Life Support"> -->
+         <p><a href="moreuses.html#test">Test Link</a></p>          
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <!-- --------------------------------------------------------------------------------------------------- -->
+   <!-- MENTAL IMAGES --------------------------------------------------------------------------------------->
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Mental images</h2>
+      <p>Now look at the mental image that could be used for Adult Basic Life Support.  I will outline the mental images I  personally use as an example of one way it can be done but again what mental images work best for you is what you should use. This is a good time to make good visual images as many will be used in other flowcharts.</p>
+      <p>Since the Adult Basic Life Support flowchart is more complicated than the Fishing Baits flowchart to help me organize my mental images I divided the Adult Basic Life Support flowchart into what I identified as major components: Initial Assessment (includes the initial image), Stable Unresponive Adult, Respiratory Arrest and Cardical Arrest.</p>
+
+      <p>Before we go over the images I use there are several points I find useful:</p>
+
+      <p><span style='font-size:20px; color: #FF0000;'>&#9733;</span> It is not wrong to use your own words for items of information if it helps your recall (unless for some unusual reason the information has to be repeated word for word) as long as it conveys the original meaning of the information. An example is my use of "Call 911" instead of "Activate emergency response system". Both represent the same concept but "Call 911" is easier to make a mental image of and actually what I would say in a real life situation. Also if I was taking a recertification test and the correct multiple choice answer was "Activate emergency response system" I believe my recall of "Call 911" would lead me to chosing the correct answer.</p>
+
+      <p><span style='font-size:20px; color: #FF0000;'>&#9733;</span> Often just one mental image is all that is needed to recall a sentence of information. For example "If suspected opiod overdose, consider opiod antagonist (eg. naloxone)" just using the mental image of naloxone (An Ox with nails sticking out of hide) is enough to recall the information adequately without creating visual images of for each word in the original sentence.</p>
+  
+      <p><span style='font-size:20px; color: #FF0000;'>&#9733;</span> Often when you put all your mental images together to practice you find some mental images that are hard to recall, visulize, link with other images or for some reason just don't work. This is very common so do not hesistate to replace that visual image with one that works better for you. I have several examples of my own from the above flowchart. Initially I used just an mental image of an actual AED device I had seen in person to represent "AED" but when I rehearsed my mental image links it just didn't work for me. The AEDes mosquito mental image worked well for me, probably beacuase it was so ridiculous. Also for seconds and minutes I initially used a stopwatch and grandfather clock but the seconds place trophy and minute maid orange juice was again more ridiculous and worked better for me.</p>
+
+      <p><span style='font-size:20px; color: #FF0000;'>&#9733;</span> As always use your own mental images that work best for you and when possible make them ridiculous. Sometimes you may come up with some that make you chuckle as the AEDes mosquito did me!
+   
+      <p>(You may click on blue highlighted text link for further information)</p>
+          
+      <!-- INITIAL ASSESSMENT IMAGES -->    
+    <ul style="list-style-type:none;">
+      <li>
+        <h3 class="w3-text-teal">Initial assessment images</h3>
+        <ul style="list-style-type:none;">
+          <li>
+            <p><b><a class="hyperlink-blue"  href="#">Adult Basic Life Support</a>:</b> The CPR practice mannequin most of us have practiced CPR on. This will also be our image to trigger our initial awareness of the flowchart and the start of it's associations. </p>
+            <p><b><a class="hyperlink-blue"  href="#">Check scene safety</a>:</b> Railway crossing gate.</p>
+            <p><b><a class="hyperlink-blue"  href="#">Check for responsiveness</a>:</b> Shake the mannequins shoulders shouting are you OK?.</p>           
+            <p><b>Shout for help:</b> Cheerleaders megaphone.</p>
+            <p><b><a class="hyperlink-blue"  href="#">Call 911</a>:</b> Cell phone with 911 on the screen.</p> 
+             <p><b>Someone get an <a class="hyperlink-blue"  href="#">AED/defibrilator</a>:</b> An Aedes mosquito (transmits Zika virus). This may be an odd image for some but it is ridiculus and fostered a stronger memory for me than a image on an actual AED did.</p>       
+            <p><b><a class="hyperlink-blue"  href="#">Look for breathing</a> and <a class="hyperlink-blue"  href="#">check pulse</a> within <a class="hyperlink-blue"  href="#">10 seconds</a>:</b></p>
+            <ul style="list-style-type:none;">
+              <li>
+                <p><b>Check for breathing:</b> An orange windsock like seen at airport  runways.</p>
+                <p><b>Check pulse:</b> A hand with the index and middle fingers extended in classic pulse checking gesture.</p>             
+                <p><b>10 seconds:</b> A traffic light. Supposidly the average time for a traffic light to change to red once the green light begins to change is less than 10 seconds.</p>
+              </li>
+            </ul>
+          </li>
+        </ul> 
+      </li>
+    </ul>
+<br>
+
+    <!-- Stable Unresponsive Adult images-->
+      <ul style="list-style-type:none;">
+        <li>
+          <h3 class="w3-text-teal">Stable unresponsive adult images:</h3>
+          <ul style="list-style-type:none;">
+            <li>
+              <p><b>Stable Unresponsive Adult:</b> A horse stable  with an unresponsive person lying on their side in the hay in the <a class="hyperlink-blue"  href="#">recovery position</a>.</p>
+              <p><b>Moniter until help arrives.</b></p>
+              <ul style="list-style-type:none;">
+                    <p><b>Monitor:</b> A computer monitor.</p>
+                    <p><b>help arrives:</b> An ambulance.</p>   
+                  </li>
+              </ul>           
+            </li>
+          </ul>
+        </li>
+      </ul>
+     <br>
+     
+  <!-- RESPIRATORY ARREST IMAGES------------------------------------------------>
+    <ul style="list-style-type:none;">
+      <li>
+        <h3 class="w3-text-teal">Respiratory arrest images:</h3>
+        <ul style="list-style-type:none;">
+          <li>
+            <p><b><a class="hyperlink-blue"  href="#">Respiratory arrest</a>:</b> A pair of deflated purple lungs in a jail cell cage.</p>
+            <p><b><a class="hyperlink-blue"  href="#">Open airway</a>:</b> Airplane with an open top.</p>   
+            <p><b><a class="hyperlink-blue"  href="#">Give breaths</a>:</b> A fireplace bellows.</p>    
+            <p><b>6:</b> A shoe (major system).</p> 
+            <p><b>seconds:</b> A stop watch. The watch hand will be a visual image of the number of seconds. For example in adult BLS the watch hand will be a shoe (major system).</p> 
+            <p><b><a class="hyperlink-blue"  href="#">Check pulse:</a></b> Two fingers, index and middle, in classic pulse checking gesture.</p> 
+            <p><b>2:</b> Noah [<a class="hyperlink-blue"  href="sketches/Noah.jpg">example image</a>] (major system).</p> 
+            <p><b>minutes:</b> A cuckoo clock [<a class="hyperlink-blue"  href="sketches/cuckooclock.jpg">example image</a>]. The visual image of a number of minuteswill be whatever comes out of the door and cuckoos. For example in adult BLS will be Noah [<a class="hyperlink-blue"  href="sketches/cuckooclockNoah2.jpg">example image</a>] (major system) </p>  
+            <p><b><a class="hyperlink-blue"  href="#">CPR</a>:</b> A taxi CAB (explained under Cardiac arrest images).</p> 
+            <p><b>no pulse:</b> A green garden hose with knots.</p> 
+            <p><b>Give <a class="hyperlink-blue"  href="#">naloxone</a> if possible opiod overdose:</b> Ox with nails sticking out of hide.</p> 
+      
+            </p><b><a class="hyperlink-blue"  href="#">Respiratory resuscitation</a>:</b> This is basically one big visual image composed of multiple other visual images listed above. I really wanted to get this visual image to work well for me for 2 reasons. First except for several modifications I will use it again in pediatric basic life support. Second if I have the need to quickly perform respiratory resuscitation I can mentally go directly to it without transversing the entire basic life support flowchart.</p>
+            <p>I started by mentally visualizing 5 blocks each with a letter lined in a row which are the upper case <span style= 'color: #FF0000;'>A</span>,<span style= 'color: #FF0000;'>B</span>,<span style= 'color: #FF0000;'>C</span>,<span style= 'color: #FF0000;'>D</span> and an <span style= 'color: #FF0000;'>ox with nails sticking out of hide</span> sitting and leaning back against the D block. For adult BLS the blocks are concrete cinder blocks and for pediatric BLS the blocks are childrens alphabet learning blcoks so I can mentally distinguish between adult and pediatric blocks.</p>
+            <p>I really will probably remeber what A,B,C & D represent (acronym mnemonic) but just in case for adult BLS I will place a visual image of what the letter represents in the concrete cinder block opening. Then I need to add visual image modifiers to the B & C blocks to represent the how often to give breaths and check pulse and the D block to represet when to do CPR.</p>
+              <ul style="list-style-type:none;">
+                <li>
+                  <ul style="list-style-type:none;">
+                    <li>
+                      <p>The A block is for <b>"open <span style= 'color: #FF0000;'>A</span>irway"</b>. If I forget what the A block represents I mentally look in the opening on the cinder block top and visualize an airliner with an open top inside (a ridiculous convertable airliner).</p>
+                      <p>The B block is for <b>"give <span style= 'color: #FF0000;'>B</span>reaths".</b> If I forget what the B block represents  I mentally look in the opening on the cinder block top and visualize a fireplace bellows. For <b>"every 6 seconds"</b> I mentally visualize a stopwatch with a shoe for the watch hand wedge in the letter B upper open space.</p>
+                      <p>The C block is for <b>"<span style= 'color: #FF0000;'>C</span>heck pulse ___ ".</b> If I forget what the C block represents I mentally open the C block and visulaze a hand with the index and middle fingers extended in classic pulse checking gesture inside thumping the inner walls of the block. <i>This block is exactly the same for both adult and pediatric basic life support.</i> Nestled inside the letter C is a bottle of minute made orange juice with Noah inside holding the two arms of the C open <b>(2 minutes)</b> (<a class="hyperlink-blue"  href="#">image</a>).</p>
+                      <p>The D block is for <b>"<span style= 'color: #FF0000;'>D</span>o CPR if ___"</b>. If I forget what the D block represents I mentally open the D block and visulaze a taxi CAB driving around inside crashing into the inner walls of the block.<i>This block will differ from pediatric basic life support in when to perform CPR.</i> For adult basic life support I visualize a coiled green garden hose with knots filling to open space of the letter D <b>(no pulse)</b>.</p>
+                      <p>The <span style= 'color: #FF0000;'>ox with nails sticking out of hide</span> is for "<b>Give naloxone if possible opiod overdose</b>". <i>This block is exactly the same for both adult and pediatric basic life support and there are no other modifiers.</i></p>
+                    </li>
+                  </ul>                                            
+                  <p><span style='font-size:20px; color: #FF0000;'>&#9733;</span>  It is important to practice what the above blocks represent before you go further. You should be able to mentally visualize the images lined up in a row and as you mentally move down the line quickly say "<b>Open airway</b>" | "<b>Give breaths every 6 seconds</b>" | "<b>Check pulse every 2 minutes</b>" | "<b>Do CPR if no pulse</b>" | "<b>Give naloxone if possible opiod overdose</b>". If you can foster a good recall of these you will be much more likely to perform if ever needed in an emergency when things can be stressful.</p> 
+                </li>
+              </ul>                                       
+          </li>
+        </ul>              
+      </li>
+    </ul>
+    <br
+
+
+<!-- CARDIAC ARREST IMAGES ------------------------------------------------------------------------->
+    <ul style="list-style-type:none;">
+      <li>        
+        <h3 class="w3-text-teal">Cardiac arrest images:</h3>
+           <ul style="list-style-type:none;">
+      <li>
+      <p><b>Cardiac arrest:</b> In the living room there is a jail cell cage and inside is an angry heart.</p>
+      <p><b>Give <a class="hyperlink-blue"  href="#">naloxone</a> if possible opiod overdose:</b> Ox with nails sticking out of hide.</p>
+      <p><b>Perform 30 <a class="hyperlink-blue"  href="#">compressions</a>:</b></p>
+        <ul style="list-style-type:none;">
+          <li>
+            <p><b>Perform compressions:</b> An old fashion hand water pump.</p>
+            <p><b>30:</b> Moss if using major system, a jellyfish if using shaper system, a birdie if using rhyming system.</p>
+          </li>
+        </ul>
+      <p><b><a class="hyperlink-blue"  href="#">Open airway</a>:</b> An open convertable top airliner.</p>
+      <p><b>Give 2 <a class="hyperlink-blue"  href="#">breaths</a>:</b></p>
+        <ul style="list-style-type:none;">
+          <li>
+            <p><b>Give breaths:</b> A fireplace bellows.</p>
+            <p><b>2:</b> Noah if using major system, a swan if using shaper system, a shoe if using rhyming system.</p>
+          </li>
+       </ul>
+      <p><b>Use <a class="hyperlink-blue"  href="#">AED</a> when available to check rhythm:</b></p>
+      <ul style="list-style-type:none;">
+        <li>
+          <p><b>AED:</b> An AEDes mosquito.</p
+          <p><b>When available:</b> A mailbox</p>
+          <p><b>Check rhythm:</b> Drumsticks.</p>
+        </li>
+      </ul>
+      
+      <h4 class="w3-text-teal">Shockable rhythm:</h4>
+        <p><b>Shockable rhythm:</b> A drum with an electrical outlet on its side. The drum represents rhythm and the outlet represent shockable.</P>
+      <ul style="list-style-type:none;">
+        <li>      
+          <p><b>Give 1 shock:</b> Single lightening bolt.</p>
+          <p><b>Perform CPR for 2 minutes:</b></p>
+           <ul style="list-style-type:none;">
+            <li>
+              <p><b>Perform CPR:</b> A taxi CAB</p>
+              <p><b>for 2 minutes:</b></p>
+               <ul style="list-style-type:none;">
+                <li>
+                  <p><b>2:</b> Noah if using major system, a swan if using shaper system, a shoe if using rhyming system..</p>
+                  <p><b>minutes:</b> A bottle of minute maid orange juice.</p>
+                </li>               
+               </ul>
+            </li>
+           </ul>  
+          <p><b>Check rhythm:</b> Drumsticks.</p> 
+          <p><b>Continue until help or patient moves.</b> Ambulence with patient crawling around on top.</p>
+        </li>
+       </ul>
+      <h4 class="w3-text-teal">Non-shockable rhythm:</h4>
+      <P><b>Non-shockable rhythm:</b> A drum with an electrical outlet on its side closed with child protector outlet plugs. The drum represents rhythm and the closed outlets represent non-shockable.</P>
+       <ul style="list-style-type:none;">
+        <li>      
+          <p><b>Perform CPR for 2 minutes:</b></p>
+           <ul style="list-style-type:none;">
+            <li>
+              <p><b>Perform CPR:</b> A taxi CAB</p>
+              <p><b>for 2 minutes:</b></p>
+               <ul style="list-style-type:none;">
+                <li>
+                  <p><b>2:</b> Noah if using major system, a swan if using shaper system, a shoe if using rhyming system..</p>
+                  <p><b>minutes:</b> A bottle of minute maid orange juice.</p>
+                </li>               
+               </ul>          
+               </ul>
+            </li>
+           </ul>  
+          <p><b>Check rhythm:</b> Drumsticks.</p> 
+          <p><b>Continue until help arrives or patient moves:</b> Ambulence with patient crawling around on top.</p>
+        </li>
+       </ul>
+        </li>
+     </ul>
+     </li>
+    </ul>
+    <br>
+
+    
+
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+
+<!-- Memory palaces ---------------------------------------------------------------------------------------------------------- -->
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Memory Palaces</h1>
+      <p>In the Fish Baits example we used just one primary memory palace for the main layout of the flowchart. In the Fish Baits example on the previous pages I used rooms of my house as a memory palace. We can't reuse any of the fishing baits mental visual images but the Adult Basic Life Support flowchart is structurally simular to the Fishing Baits flow chart so I am able to use the same rooms of my house once again as a memory palace as below under primary memory palace.</p>
+      <p>There is no reason you can't use accessory memory palaces inside the primary memory palace to attach cloasely relateded information onto. In this example a did so for initial assessment, CPR, respiratory resuscitation and stable unresponsive adult for which I used a CPR mannequin, a taxi CAB, children alphabet blocks ABC and a horse stable. Each of these accessory memory palaces meet criteria for a memory palace as there are all something I am familiar with (eg. how a taxi CAB looks), have know fixed locations (eg. the hood of the taxi CAB), and have a clear sequence of order I can mentally walk through (eg. the hood to the roof to the trunk of the taxi CAB), An example would be if I was following the flow chart for respiratory resuscitation and the pulse became absent I could immedialely go to the CPR Taxi CAB interventions without having to walk through the entire flow chart. </p>
+      <ul style="list-style-type:none;">
+        <li>
+          <h3 class="w3-text-teal">Primary memory palace:</h3>
+          <p>For the primary memory palace I used the rooms of my house as in the Fishing Baits example. The foyer is the starting point of the flowchart and then the flowchart branches to the left, right and straight ahead so I placed the major components of the flowchart in those locations. The left branch is the stable unresponsive adult so I placed that in the dining room to the left. The right branch is respiratory arrest so I placed that in the bedroom to the right. The straight ahead branch is cardiac arrest so I placed that in the living room straight ahead.</p>
+          <img class="resized-image" src="images/House-No Porch.svg" alt="Adult Basic Life Support">   
+          <p style="text-align: center;" ><b>Figure 2</b></p>
+          <p>Then we can place the major components in (In Figure 3 below).</p>
+          <img class="resized-image" src="images/House-Adult BLS.svg" alt="Adult Basic Life Support">    
+          <p style="text-align: center;" ><b>Figure 3</b></p>
+          <p>Finally we can fill out what we wish to be able to recall when it is time to pass a recertification test or if it is actually needed in an emergency sometime (In Figure 4 below).</p>
+          <p style="text-align: center;" ><b>Figure 4</b></p>
+        </li>
+         <li>
+           <h3 class="w3-text-teal">Accessory memory palaces:</h3>
+           <p><b>Initial Assessment:</b></p>
+           <p><b>Respiratory resuscitation :</b> ABC alphabet learning blocks</p>
+           <ul style="list-style-type:none;">
+            <li>              
+            <!-- <p><b><a class="hyperlink-blue"  href="#">Open airway</a>:</b> Represented by the A block.</p> -->
+            <!-- <p><b><a class="hyperlink-blue"  href="#">Open airway</a>:</b> Airplane with an open convertable top landing on the block.</p> -->
+            </li>
+           </ul>
+           <p><b>CPR:</b> A taxi CAB. </p>
+           <ul style="list-style-type:none;">
+            <li>
+              <p>More recent  CPR guidelines recommend compressions before airway and breaths so the ABCD acronym mnemonic as used in respiratory arrest can not be used. This newer order of interventions would be CAB (perform compressions, open airway and give breaths). A classic taxi CAB will do. The front hood has an old fashion water pump sitting on it and pumping out moss (<b>Give 30 compressions</b>). Alternatively you could use a jelly fish or a birdie if using the shaper system or the rhyme system for the number 30. The roof top has an open convertable top landing on top airliner that has landed on it (<b>Open airway</b>). The trunk has a  fireplace bellow sitting on it that is being pumped by Noah (<b>Give 2 breaths</b>). Alternatively to pump the fireplace bellows you could use a swan or a shoe if using the shaper system or the rhyme system for the number 2. In the tail pipe of the taxi CAB is a mailbox with an open door and a AEDES mosquito stcking its head out and the mosquito has a drumstick in each of two long legs clicking the drumsticks together (<b>Use AED when arrives to check rhythm</b>). So now mentally walking along the taxi CAB from the front to the back we have the order of initial interventions for CPR. of course later in <i>Making It Work!</i> we will add the results of the rhythm check(Shockable and Non-shockable rhythm).</p>
+            </li>
+           </ul>
+          
+          <p><b>Stable unresponsive adult:</b></p>
+        </li>
+      </ul>
+      
+      
+      
+   
+       
+
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+<!-- ----------------------------------------------------------------------------------------------------------------------->
+<!-- Making it work -------------------------------------------------------------------------------------------------------->
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Making It Work!</h1>
+         <ul style="list-style-type:none;">
+          <li>
+             <h3 class="w3-text-teal">Setting up memory the palace:</h3>
+             <ul style="list-style-type:none;">
+              <li>
+                <p>Let us start with the major componets in the  memory palace I personaly I use (see Figure 3 above). In the foyer is the CPR practice mannequin lying ont he floor (<b>Adult Basic Life Support</b>). To the left in the dining room on top of the dining room table is a horse stable with a person lying on their side in the hay in the recovery position (<b>Stable unresponsive adult</b>). The hay is spilling out and getting all over the table and into the plates on the table. To the right on the bedroom bed is a jail cell cage with a pair of deflated purple lungs inside (<b>Respiratory arrest</b>). The lungs are oozing muucs that is getting on the bedspread. Straight ahead on the living room floor is an angry heart in jail cell cage (<b>Cardiac arrest</b>). Sitting in front of the left back door is a drum with an electrical outlet on its side (<b>Shockable rhythm</b>). Sitting in front of the right back door is a drum with an electrical outlet on its side closed with child protector outlet plugs (<b>Non-hockable rhythm</b>).</p>
+                <p>These mental images should be strongly linked to the rooms such as hay getting on the place settings or mucus on the bedspread. The reason for this is once the flowchart is in memory you do not have to go back and walk through the entire flowchart to get to a particular major component. If you need  "Cardiac arrest" you can simply visualize the angry heart in the jail cell cage in the living room and proceed from there without having to recall the entire flowchart. You will find you can even start from the end of the flowchart and work your way up if you make your recall vivid.</p>
+              </li>
+             </ul>
+          </li>
+<!-- INITIAL ASSESSMENT MAKING IT WORK -->
+          <li>
+             <h3 class="w3-text-teal">Starting image/Initial assessment:</h3>
+              <ul style="list-style-type:none;">
+                <li>
+                  <p>Now we start in the foyer (see Figure 4 above). Lying on the floor in the foyer a CPR practice mannequin (<b>Unresponsive adult</b>). A railway crossing gate is lowered across the mannequins neck (<b>Check scene safety</b>). You throw the gate off the mannequins neck and shake the mannequin shouting are you OK (<b>Check for responsiveness</b>). From the shaking the mannequins  a cheerleaders megaphone arises out of the mannequins mouth (<b>Shout for help</b>). You look in the megaphone and there is a cell phone with 911 on the screen down in the magaphone circuling like water in a toilet bowl (<b>Call 911</b>). You hear buzzing and a suddenly a large AEDES mosquito comes out of the megaphone and purches on the edge of the megaphone (<b>Someone get an AED/defibrilator</b>). You look at the mosquito (<b>Quickly</b>) and it is waving an orange windsock in one hand (<b>Look for breathing:</b>) and on the end of the other arm are two large pulse checking finger (<b>Check pulse</b>). On the the mosquitos head is a traffic light (Within 10 seconds).</p>
+                </li>
+              </ul>
+          </li>
+<!-- STABLE UNRESPONSIVE ADULT MAKING IT WORK -->
+           <li>
+             <h3 class="w3-text-teal">Stable unresponsive adult:</h3>
+             <ul style="list-style-type:none;">
+                <li>
+                  <p> If there is normal breathing and a pulse is present it is a stable unresponsive adult (see Figure 4 above). To the left in the dining room on top of the dining room table is a horse stable with a person lying on their side in the hay in the recovery position (<b>Stable unresponsive adult</b>). The hay is spilling out and getting all over the table and into the plates. Next to the person is a computer monitor in the hay (<b>Monitor</b>) and on the screen is an ambulance going in circles with its lights flashing(<b>until help arrives</b>).</p>
+                </li>
+              </ul>
+          </li>
+<!-- RESPIRATORY ARREST MAKING IT WORK -->
+           <li>
+             <h3 class="w3-text-teal">Respiratory arrest:</h3>
+             <ul style="list-style-type:none;">
+                <li>
+                 <p>If there is abnormal breathing and a pulse is present it is respiratory arrest. To the right in the bedroom we see a pair of deflated purple lungs in a jail cell cage on the bedspread (<b>Respiratory arrest</b>). In front of the jail cell are the capital letter A,B,C,D blocks alphabet learning blocks (<b>Respiratory resuscitation</b>). We mentally go from the first block to the last block. The first block is the A block which in both adult and pediatric BLS has np modifiers (<b>Open airway</b>). The next block B block (<b>Give breaths</b>) and is modified by the upper enclosed space of the letter B being stop watch with a shoe for the stop/start button sticking up (<b>every 6 seconds</b>). On the C block (<b>Check pulse</b>) the straight vertical line of the capital C block is a cuckoo clock with a little Noah popping out saying cuckoo (<b>every 2 minutes</b>).  The D block is actually made from a  green garden hose with knots in it in the shape of a D (Do CPR if no pulse). Lying with his back against the D block is an ox with nails in it's hide (<b>Give naloxone if possible opiod overdose</b>).   
+                    
+                </li>
+              </ul>
+          </li>
+
+  <!-- CARDIAC ARREST MAKING IT WORK -->
+           <li>
+             <h3 class="w3-text-teal">Cardiac arrest:</h3>
+             <ul style="list-style-type:none;">
+                <li>
+                  <p>Now let's move on to no breathing and no pulse, <b>Cardiac Arrest</b>, which is represented by an angry  heart in a jail cell cage in the living room</p>
+                  <p>In the jail cell cage is also an ox with nails in it's hide (<b>Naloxone if suspected opiod overdose</b>)trying to push the jell cell cage door open but it can't because it is blocked by a taxi CAB (<b>Perform CPR</b>).</p>                  
+                  <p>As we walk down the taxi CAB from front to back on the front hood of the taxi CAB we see a old fashion hand water pump pumping out moss (<b>Give 30 compressions</b>). Alternatively you could use a jelly fish or a birdie if using the shaper system or the rhyme system for the number 30.</p>
+                  <p>On the roof of the taxi CAB there an airplane with a open convertable top airliner that has landed on the roof (<b>Open airway</b>).</p>
+                  <p>On the trunk of the taxi CAB is a fireplace bellows that is being pumped by Noah (<b>Give 2 breaths</b>). Alternatively to pump the fireplace bellows you could use a swan or a shoe if using the shaper system or the rhyme system for the number 2.</p>
+                  <p>Finally in the tail pipe of the taxi CAB is a mailbox with an  open door and a AEDES mosquito stcking its head out and the mosquito has a drumstick in each of two long legs clicking the drumsticks together (<b>Use AED when arrives to check rhythm</b>).
+                  <p>That completes the inital CPR flowchart. Now we have to look at the two back dorors to see the results of the rhythm check.</p>
+                  <h4 class="w3-text-teal">Shockable rhythm:</h4>
+                    <ul style="list-style-type:none;">
+                      <li>
+                        <p>In front of the left back door is a drum and on its side is an electrical outlet (<b>Shockable rhythm</b>).</p>
+                        <p>Out of the drums electrical outlet a single bolt of lightening erupts (<b>Give 1 shock</b>). </p>                        
+                        <p>Slung between the 2 drums on the back door is a hammock connecting the two drums. Driving in the hammcok is a taxi CAB with a bottle of minute maid orange juice with Noah inside strapped on top of it. (<b>Resume CPR for 2 minutes</b>). Then two drum sticks shoot down and stick in the bottle of minute maid orange juice with Noah inside (<b>Check rhythm </b>). Between the two drumsticks, which are acting like chop sticksis, is held an ambulence with a pateint crawling around on top (<b>Continue until help arrives or the patient moves</b>).</p>
+                      </li>
+                    </ul>
+                  <h4 class="w3-text-teal">Non-shockable rhythm:</h4>
+                    <ul style="list-style-type:none;">
+                      <li>
+                        <p>In front of the left back door is a drum and on its side is an  electrical outlet closed with child protector outlet plugs (<b>Non-shockable rhythm</b>).</p>
+                        <p>Slung between the 2 drums on the back door is a hammock connecting the two drums. Driving in the hammcok is a taxi CAB with a bottle of minute maid orange juice with Noah inside strapped on top of it. (<b>Resume CPR for 2 minutes</b>). Then two drum sticks shoot down and stick in the bottle of minute maid orange juice with Noah inside (<b>Check rhythm </b>). Tied to one of the drumsticks is an ambulence with a pateint crawling around on top (<b>Continue until help arrives or the patient moves</b>).</p>
+                      </li>
+                    </ul>
+                </li>
+              </ul>
+          </li>
+         </ul>
+        <!-- Overview of memory palace -->
+        
+        
+      <!-- Cardiac arrest -->
+     
+
+      
+   
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Practice</h1>
+        <p>Repetition</p>
+        
+        <p>Testing yourself with flashcards or practice tests is also a good way to reinforce the memory of the flowchart. You can make your own flashcards or use online resources. Here are some links to practice tests and videos that can help you review the Adult Basic Life Support flowchart:</p>
+      <!-- <ul style="list-style-type:none;">
+          <li>
+            <h3 class="w3-text-teal">Adult BLS</h3>
+              <p><a href="https://www.youtube.com/watch?v=hytZIunJrO0" target="_blank">Basic Life Support- AHA CPR 2025 Updates</a></p>
+              <p><a href="https://www.youtube.com/watch?v=mXMRmeEwyVg" target="_blank">2026 CPR & BLS Practice Test | 50 Questions with Nurse Eunice</a></p>
+              <p>Check pulse</p>
+            </li>
+        </ul>  -->
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  
+<!-- END MAIN -->
+</div>
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- My stuff -->
+<link rel="stylesheet" href="shared.css">
+<script src="shared.js" defer></script>
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+</head>
+<body>
+<!-- Scroll button -->
+<button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <!-- Menu button -->
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <!--Header Title: Removes underline from <a/>, removes hand cursor when hover over with mouse pointer, adjust title wording by width -->
+    <a href="#" class="w3-bar-item w3-hide-small  w3-hide-medium" style="text-decoration: none; cursor: default;">Memory Systems/Basic Life Support Algorithms </a>
+    <a href="#" class="w3-bar-item  w3-hide-large" style="text-decoration: none; cursor: default;">Memory Systems/BLS Algorithms</a>
+  </div>
+</div
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn1 " href="index.html">Introduction</a>
+  <a class="w3-bar-item w3-button w3-hover-black sectionbtn" href="javascript:void(0)"><b>I. Memory Systems</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn1 " href="memorysystems.html">Memory Systems</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn1" href="overviewsampleproblem.html">Practice Algorithm</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="mindmapping.html">1. Mind Mapping</a> 
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="visualmnemonics.html">2.Visual Mnemonics</a> 
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn3" href="numbers.html">2.A. Visual Numbers</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn3" href="numbersmore.html">2.B. More Numbers</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="links.html">3. Links</a> 
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="methodofloci.html">4. Method of Loci</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2 selectedbtn" href="spacedrepetition.html">5. Spaced Repetition</a>  
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Spaced Repetition (practice)</h1>
+      <p>Spaced repetition is a memory technique that involves reviewing previously learned material at increasing intervals of time. Of course just about all of us have done this in our studies using rote memorization.</p>
+      <p>Though not near as much as with rote memorization you still will need to practice your mental images and associations by spaced repetition.  Practice involves repeating the mental images and associations until none are missed. </p>
+      <p> How often you practice will be based on your individual tendacies, the complexity of the material and how especially long you need to retain the memory. </p>
+      <p>If it is something just needing to be recalled short term such as a shopping list just the initial mental visual images and link associations are all that are needed. The shopping list can bascially be "rewritten" with new mental visual images the next week without the old images competing. This would be simular to using a black board and chalk.</p>
+      <p>If it is something important and needing to be retained long term practcing several times on the first day and then daily for several days and then maybe weekly several times and then just occasionally such as monthly would usually be adequate. This would be simular to itching in stone.</p> 
+      <p>As discussed in <i>Memory Systems</i> learning new information, at least for me, is not near as dreadful with memory system techniques. I also find reviewing information previously learned using a memory system techniques is more enjoyable. </p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Lets Practice</h2>
+      <p>The following mental visual images of the Fish Baits algorithm that I used. Again remember your own images that first come to your mind for each piece of information are usually better.</p>
+      <br>
+      <img  class="resized-image" src="images/FishBaitLoci06.svg">
+      <br>
+      <br>      
+      <p>Let's walk through the algorithm and practice.</p>
+      <p>Start by getting the big picture of the major branchs. Looking in the foyer is an earthworm getting gooey slim on the foyer rug to represent the initial mental visual image <i>Fish Baits</i>. Looking to the guest bedroom there is a fish with a frying pan body that is on the guest bed burning a hole in the bedspread representing <i>Panfish</i>. Looking in the dining room on the glass top ding table is a fish with a vibrating tuning fork body that is chipping the glass table top as it vibrates representing <i>Tuna Fish</i>. Looking ahead into the living room there is a fish with a cats head on the couch scratching and ripping the fabric representing <i>Catfish</i>. Practice seeing these mental visual images or the ones you use several times and then lets move on to each fish.</p>
+      <p>If we go back to the earthworm and visually walk down its body from head to tail. First start with the image of the worm which is the initial image for <i>Fish Baits</i> and then visually work done the length of the worm from head to tail. First there is a life jacket on the worm for <i>Remember life jackets</i>. Next there is a can of bug repellant on the worms hump for <i>Remember bug repellant</i>. Next on the worms tail is a weather vane for <i>Check weather</i>. On top of the weather vane is a cell phone which a picture of two frineds on it's screen for <i>Call friends to see if wish to go</i>. Finally sticking out of the side of the cell phone is check book with a fish logo for <i>Check which fish are biting</i>.
+      <p>Now look at the <i>Panfish</i> and there are several pickles crying as they get fried in the frying pan body of the fish for <i>Pickles</i> as bait.</p>
+      <p>Next look at the <i>Tuna Fish</i> and there are two apples leaking apple juice are skewered on the tuna fork portion of the fish for <i>Apples</i> as bait.</p>
+      <p>Finally look at the <i>Catfish</i>. The <i>Catfish</i> is vomiting up suns to represent <i>Daytime</i> and the the suns eyes are replaced by fried eggs to represent <i>Eggs</i> as bait. The <i>Catfish</i> is pooping out a swiss cheese moons to represent <i>Nighttime</i> and two hotdogs in love are dancing in the craters of the swiss cheeze moon to represent <i>Hotdogs</i> as bait.</p>
+      <p>Practice this several times now, maybe once or twice later today and then tomorrow morning see if you are not suprised at how well you can recall the <i>Fish Baits</i> algorithm!</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Next</h2>
+      <p>Prior to going on to <i>Basic Life Support</i> and <i>Foreign Body Airway Obstruction</i> algorithms if you are interested in the memory system techniques outlined and feel they are something are you interested in incorporating in your life there are several steps I would consider first:</p>
+      <ul>
+        <li>First review <i>More Uses</i> and find simple situations such as grocery lists or peoples names that you can use in daily situations as opportunities to practice memory system techniques. Most uses really just require the use of just two memory system techniques, visual mnemonics and links, and are excellent practice.</li>
+        <li>Learning visual numbers does require more work to master but really opens up many new memory possibilities.</li>
+      </ul>
+  
+      
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

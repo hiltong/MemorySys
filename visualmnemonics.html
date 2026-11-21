@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- My stuff -->
+<link rel="stylesheet" href="shared.css">
+<script src="shared.js" defer></script>
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+</head>
+<body>
+<!-- Scroll button -->
+<button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <!-- Menu button -->
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <!--Header Title: Removes underline from <a/>, removes hand cursor when hover over with mouse pointer, adjust title wording by width -->
+    <a href="#" class="w3-bar-item w3-hide-small  w3-hide-medium" style="text-decoration: none; cursor: default;">Memory Systems/Basic Life Support Algorithms </a>
+    <a href="#" class="w3-bar-item  w3-hide-large" style="text-decoration: none; cursor: default;">Memory Systems/BLS Algorithms</a>
+  </div>
+</div
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn1 " href="index.html">Introduction</a>
+  <a class="w3-bar-item w3-button w3-hover-black sectionbtn" href="javascript:void(0)"><b>I. Memory Systems</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn1 " href="memorysystems.html">Memory Systems</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn1 " href="overviewsampleproblem.html">Sample Algorithm</a>   
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2 " href="mindmapping.html">1. Mind Mapping</a>  
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2 selectedbtn" href="visualmnemonics.html">2. Visual Mnemonics</a> 
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn3" href="numbers.html">2.A. Visual Numbers</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn3" href="numbersmore.html">2.B. More Numbers</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="links.html">3. Links</a> 
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="methodofloci.html">4. Method of Loci</a> 
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="spacedrepetition.html">5. Spaced Repetition</a> 
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Visual Mnemonics</h1>
+      <!-- <p><i>Visual Mnemonics</i> are the most important part of many memory system techniques. </p> -->
+      <p><i>Visual Mnemonics</i> are a type memory system technique that pairs information with mental visual images to enhance memory recall. They are one of the most common memory system techniques that experienced memory experts (mnemonists) use. They very versitle and can be used with any type of information as discussed further below.</p>
+      <p>There are two key components of visual mnemonics:</p>
+      <uL>
+        <li><i>Mental visual images</i> which are the cornerstone of visual mnemonics. </li>
+        <li><i>Associations</i>, both <i>links</i> and <i>method of loci</i> which are important in the effective use of the mental visual images.</li>
+      </uL>
+      
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Mental Visual Images</h2>
+      <p>Human memory is strongly visual. Seeing something forges a much stronger memory than reading about something. Visual mnemonics takes advantage of this by attaching information needing to be remembered to a mental visual image. These images created in the mind can be as vivid and detailed as actual visual images.</p>
+       <p>Fortunately creating a mental visual image of information also creates a strong memory just like an actual visual image seen with the eye itself. Mental visual images can be subsituted for words, actions and even numbers <span class="highlight-blue">(Lorayne and Lucas chapters 2 &3)</span>.</p> 
+       <p>There are several helpful hints when forming a mental visual image for a bit of information:</p>
+       <ul>
+        <li>An important part of creating mental visual images is that an image is often more vivid and forms a stronger memoryif it is ridiculusly modified in some way such as size, silliness, color, action, graphic, wierd, etc.</li>
+        <li>A mental visual image is often a stronger memory if it is one you made up yourself rather than using an example mental visual image from some other source (such as this website).<span class="highlight-blue">(Lorayne and Lucas chapters 2 &3)</span>. Sometimes when creating a mental visual image of a bit of information what first pops to your mind is best.</li>
+       </ul>
+       <P>When creating mental visual images of information there are two general categories of information:</P>
+       <ul style="list-style:circle;">
+          <li><h3>Tangible information</h3>
+            <ul style="list-style:none;">
+              <li>
+                <p>Tangible information is information such as <i>hotdogs</i> where a mental visual image of hotdogs can be readily mentally seen. Just mentally visualizing hotogs could suffice but the image of the hotdogs would be stronger if ridiculously modified somehow such as two hotdogs dancing (Lorayne and Lucas chapter 4).</p> 
+                <img src="images/hotdogs01.jpg"  style="display:block; margin:auto;" height="140">
+              </li>
+            </ul>
+          </li>
+          <li><h3>Intangible information</h3>
+            <ul style="list-style:none;">
+              <li>
+                <p>Intangible information is information where there is not an exact mental visual image readily available. In this situation a <i>subsitute</i> mental visual image is needed to represent the information. An example of intangible information in the Fish Baits algorithm the information <i>nighttime</i> requires a substitute mental image as there is no exact image of a nighttime. There are numerous mental visual images that one could use such as stars but the one that came to my mind was a moon made out of swiss cheese with the cheese's eyes (holes) being craters.</p>
+                <img src="images/moon02.jpg" style="display:block; margin:auto;"  height="120">
+                <p>Substitute mental visual image may initially sound difficult and abstract but with practice and imagination there is not any information for which a substitute mental visual image cannot be made.</p>
+                <p>Numbers are a perfect example of intangible information that can be made tangible with subsitute mental visual images. These are the most complex to learn but have so many daily uses the learning is very worth it. Numbers will be discussed seperately on the next pages but it might be best if you are completely new to these memory sytem techniques to skip them for now and go straight to the <i>Associations: Links </i> page <span class="highlight-blue">(Lorayne and Lucas chapter 4 & *)</span>.</p>       
+              </li>
+            </ul>
+          </li>
+       </ul>
+       <p>Now we can practice making some initial mental visual needed for the <i>Fish Baits</i> algorhithm. Remember the mental visual images I choose are an example and very likely would be different from what another would choose. Again the important thing is to create images that are your own and if possible make them rediculous in some way!</p>
+       <p>Referring back to the <i>Mind Mapping</i> page the algorithm started with the main topic, <i>Fish Baits</i>. Growing up I remember fishing mostly with earthworms so an image of a happy smiling earthworm reminds me of <i>Fish Baits</i>. This also will be my starting image which is what I think of to start the "Fish Baits Algorithm":</p>
+       <ul style="list-style-type:disc;">
+        <li>Fish Baits<img src="images/worm03.jpg" style="padding-left: 15px ;" height="60"></li>
+       </ul>
+      <p>Next there were the three main branches that need mental visual images. <i>Panfish</i> (a fish with a sizzling hot frying pan body), <i>Catfish</i> (a fish with a cat's head and legs), and <i>Tuna Fish</i> (a fish with a vibrating tuning fork for a body).</p> 
+        <ul style="list-style-type:disc;">
+          <li>Panfish <img src="images/panfish06.jpg" style="padding-left: 15px ;" height="60"></li>
+          <li>Catfish <img src="images/catfish02.jpg" style="padding-left: 15px ;" height="60"></li>
+          <li>Tuna Fish <img src="images/tunafish05.jpg" style="padding-left: 15px ;" height="60"></li>
+        </ul>
+        <p>The additional information that pertains to <i>Fish Baits</i>, <i>Panfish</i>, <i>Catfish</i>, and <i>Tuna Fish</i> will be associated in the form of mental visual images in the <i>Links</i> page.</p>
+        <!-- <p><i>Visual numbers</i> and <i>Visual letters</i> are the most complex technique and requires the most learning. <i>Visual Numbers</i> are not used in the <i>Practice Algorhithm</i> and one may wish to skip onto <i>Links</i> which is the first type of mental visual image association. <i>Visual Numbers</i> are needed for the more complex algorithms in <i>Basic Life Support</i>. <i>Visual Numbers</i> are incredible usefullnes in day to day living in remembering numbers and it is highly recommended for those who wish to be preoficient in memory system techniques.</p> -->
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+
+<!-- <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Fish Baits Algorhithm Mental Visual Images</h2> 
+      <p>Now we need to create mental visual images for our "Fish Baits Algorithm". Remember the images I choose are an example and very likely would be different from what another would choose. Again the important thing is to create images that are your own and if possible rediculous in some way!</p>
+      <p>Referring back to <i>Mind Mapping</i> the algorithm started with the main topic, "Fish Baits". Growing up I remember fishing mostly with earthworms so this image reminds me of fish baits. This will be my starting image which is what I think of to start the "Fish Baits Algorithm":</p>
+       <ul style="list-style-type:disc;">
+        <li>Fish Baits<img src="images/worm03.jpg" style="padding-left: 15px ;" height="60"></li>
+       </ul>
+      <p>Next there were the three main branches that need mental visual images. Panfish(a fish with a frying pan body), Catfish (a fish with a cat's head and legs), and Tuna Fish (a fish with a tuning fork for a body).</p> 
+        <ul style="list-style-type:disc;">
+          <li>Panfish <img src="images/panfish06.jpg" style="padding-left: 15px ;" height="60"></li>
+          <li>Catfish <img src="images/catfish02.jpg" style="padding-left: 15px ;" height="60"></li>
+          <li>Tuna Fish <img src="images/tunafish03.jpg" style="padding-left: 15px ;" height="60"></li>
+        </ul>
+        <p>The additional information associated with "Fish Baits", "Panfish", "Catfish", and "Tuna Fish", in the form of mental visual images, will be added to each of the above images in <i>Links.</i></p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div> -->
+
+
+
+  <div class="w3-row ">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Associations</h2>
+      <p>It is nice to create strong mental visual images of information but these mental visual images just sitting in ones mind does not help much. This is where associations come into play.</p>
+      <p>Mental visual image associations are very important for 2 reasons:</p>
+        <ul style="list-style-type:disc;">
+          <li>The first to cause initial awareness of the existance of the mental visual images. Someone may know something but unless they become aware of it ("reminded of it") they may not be able to recall it. This results in the often heard phrase "I remeber that now that you reminded me".</li>
+          <li>The second is so the individual mental visual images can be recalled in an orderly manner.</li>
+        </ul> 
+      <p>There are two basic methods of associating for mental visual images of information with other mental visual images:
+         <ul style="list-style-type:disc;">
+          <li>Mental visual images can be associated with another mental visual image of information by using <i>Links</i>.</li>
+          <li>Mental visual images can be associated with a mental visual image of a spatial location often referred to as the <i>Method of Loci</i> and more recently referred to as <i>Memory Palaces</i>.</li>
+         </ul>
+      
+      <!-- <p>Associations will become more clear once links and the method of loci are covered. An introductionary example of mental visual image associations is a grocery list of lettuce, steak, pizza, dog food and chocolate ice cream. The mental visual image of the grocery store entrance (method of loci) would the starting mental visual image to make us initially aware ("remind us") of the existance of a grocery list when we entered the grocery store.  The mental visual image of the first item on the grocery list would be associated with the mental visual image of the entrance to the grocery (links). Then the order of the  grocery list would be obtained by associating the next item on the grocery list mental image with the first mental image and so on (links). So if the grocery list was lettuce, steak, pizza, dog food and chocolate ice cream one could imagine the sliding glass doors (starting mental visual image) at the entrance to the grocery stoor closed on a head of lettuce (1st link). As the lettuce is squeezed a steak drops out and lands on a pizza (2nd link) on the concrete floor. A dog (3rd link) then runs up and eats the steak and pizza in one bite (this is example of simplifying, there are no dogs at the grocery store so the mental visual image of a dog recalls dog food). As the dog runs off he falls into a large tub of chocolate ice cream (4th link). Now if one walks through and visualizes the above scenario the grocery list can be recalled easily not just today but probably tomorrow also with very little practice. As one becomes proficient recalling lists of 10, 20 or even 30 items or more in length becomes possible.</p> -->
+      <p>Links and the methood of loci will be covered in the next several pages.</p> 
+
+      <p></p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+
+
+  <!-- <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Visual Numbers and Visual Letters</h2>     
+         <p><i>Visual Numbers</i> are really a subcategory of <i>Visual Mnemonics</i> but is the most complex technique and requires the most learning. <i>Visual Numbers</i> are not used in the <i>Practice Algorhithm</i> and one may wish to skip onto <i>Links</i> which is the first type of mental visual image association. <i>Visual Numbers</i> are needed for the more complex algorithms in <i>Basic Life Support</i>. <i>Visual Numbers</i> are incredible usefullnes in day to day living in remembering numbers and it is highly recommended for those who wish to be preoficient in memory system techniques.</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div> -->
+
+  
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

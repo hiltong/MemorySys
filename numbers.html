@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>images</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- My stuff -->
+<link rel="stylesheet" href="shared.css">
+<script src="shared.js" defer></script>
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+</style>
+</head>
+<body>
+  <!-- Scroll button -->
+<button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <!-- Menu button -->
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <!--Header Title: Removes underline from <a/>, removes hand cursor when hover over with mouse pointer, adjust title wording by width -->
+    <a href="#" class="w3-bar-item w3-hide-small  w3-hide-medium" style="text-decoration: none; cursor: default;">Cardiopulmonary Resuscitation with Visual Mnemonics</a>
+    <a href="#" class="w3-bar-item  w3-hide-large" style="text-decoration: none; cursor: default;">CPR with Memory Methods</a>
+  </div>
+</div>
+
+<!-- Sidebar with Menu -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn1 " href="index.html">Introduction</a>
+  <a class="w3-bar-item w3-button w3-hover-black sectionbtn" href="javascript:void(0)"><b>I. Memory Systems</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn1 " href="memorysystems.html">Memory Systems</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn1" href="overviewsampleproblem.html">Practice Algorithm</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="mindmapping.html">1. Mind Mapping</a> 
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="visualmnemonics.html">2.Visual Mnemonics</a> 
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn3 selectedbtn" href="numbers.html">2.A. Visual Numbers</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn3" href="numbersmore.html">2.B. More Numbers</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="links.html">3. Links</a>  
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="methodofloci.html">4. Method of Loci</a> 
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="spacedrepetition.html">5. Spaced Repetition</a>  
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Visual Numbers</h1>
+       <p>To use numbers with visual mnemonics they must invoke  mental visual images just like other objects.The problem is that numbers are intangible pieces of information. You can not visualize a number, when written it is just a symbol. Fortunately there is a memory system technique called the <i>Major System</i> to convert numbers to substitute mental visual images.  Learning the <i>Major System</i> is more involved and requires more rote memorization than what has been discussed previously but still uses the basic building blocks of mental visual images and associations.</p>
+      <p>In addition to the <i>Major System</i> there are several other visual systems for remembering numbers that are simplier though not near as powerful that will be discussed briefly at the end of this page.</p>
+      <p>The <i>Major System</i> is the most powerful and useful memory system technique for numbers. It is  recommended if you are interested in using memory system techniques in your everyday life. See <i>More Uses</i> for additional way a quick strong memoey of numbers can be beneficial. </p>
+       
+                
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h2  class="w3-text-teal">The Major System</h2>
+       <p>The <i>Major System</i> once grasped can revolutionize ones ability to recall numbers. Remembering an 8 digit number with rote memorization is time consuming and often inaccurate but with the <i>Major System</i> it becomes easy!</p>
+       <p>The <i>Major System</i> works by a series of mental associations/conversions:</p>
+        <ul style="list-style-type:disc;">
+          <li>Individual digits are associated with  phonetic sounds (letters).</li>
+          <li>Phonetic sounds/letters are then converted to words (mental visual images).</li>
+        </ul> 
+        <p><span class="highlight-blue">(Lorayne and Lucas chapter 10)</span></p>
+        <p>As discussed earlier in this web site most users of memory system techniques sometimes personalize a basic concept ina way that works better for them. The "Major System" is the area that I personalized more than other areas and where I have done so I will mark with a <span style='font-size:20px; color: #FF0000;'>&#9733;</span> and explain why</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+
+<div class="w3-row  w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Associate Digits With Phonetic Sounds (Letters)</h2> 
+        <p>There are 10 digits that make up all numbers. In the <i>Major System</i> 10 basic consonant phonetic sounds are associated with each of the 10 digits. Phonetic sounds for the purpose of these pages means certain sounds we produce by the same configurations of our vocal tract when pronouncing letters, T and D are an example of having same phonetic sound <span class="highlight-blue">(Lorayne and Lucas chapters 10 & 11)</span>. This does require the use of rote memorization but in the long run it makes memorizing numbers vastly easier.</p>   
+        <p>The following are the digits and associated phonectic sounds and consonants of the <i>Major System</i>. After reviewing this list I will discuss below why some letters are red.</p>
+          <ul  style="list-style-type:none;">
+            <li>0 = <b><span style="color: red;">s</span></b>, z, soft c (e.g. century, ceiling) all of which have the same hissing phonetic sound. Helpful memory hint zero starts with z.</li>
+            <li>1 = <b><span style="color: red;">t</span></b> or d phonetic sound. Helpful memory hint is a small t has a single down stroke.</li>
+            <li>2 = <b><span style="color: red;">n</span></b> phonetic sound. Helpful memory hint is a n small two down strokes.</li>
+            <li>3 = <b><span style="color: red;">m</span></b> phonetic sound. Helpful memory hint is a small m has three down strokes.</li>
+            <li>4 = <b><span style="color: red;">r</span></b> phonetic sound. Helpful memory hint is the word four ends with an r or a 4 looks somewhat like backwards small case r .</li>
+            <li>5 = <b><span style="color: red;">l</span></b> phonetic sound. Helpful memory hint is capital L looks like a 5 finger hand with the thumb sticking out.</li>
+            <li>6 = <b><span style="color: red;">sh</span></b>, ch, j (e.g. jude), soft g (e.g. gentle) phonetic sound. Helpful memory hint 6 looks like a left shoe footprint.</li>
+            <li>7 = <b><span style="color: red;">k</span></b>, hard c (e.g. cat, cut), ck (e.g. Duck), hard g (e.g. gut) phonetic sound. Helpful memory hint is capital K looks like it could be made up of two 7's back to back.</li>
+            <li>8 = <b><span style="color: red;">f</span></b>, v, ph phonectic sound. Helpful memory hint is a cursive small f looks like an 8.</li>
+            <li>9 = <b><span style="color: red;">p</span></b>, b phonetic sound.  Helpful memory hint is a 9 looks like backwards capital P.</li>
+          </ul>
+          <p>Additional <i>Major System</i> rules:</p>          
+          <ul  style="list-style-type:disc;">
+            <li>Vowels (a,e,i,o,u) have no meaning.</li>
+            <li>Consonants w, h and y have no meaning.</li>
+            <li>Consonant x is usually not used.</li>
+            <li>Silient consonants have no meaning. Gnash would be 26 (use the n and sh) as the g is silient</li>
+            <li>Double letters count as single letter as usually the make one phonetic sound, Moss would be 30 (use the m and use s) and not 300.</li>
+          </ul>
+        <p><span style='font-size:20px; color: #FF0000;'>&#9733;</span> In the <i>Major System</i> classically the number is linked to the phonectic sound and not the letter(s). When I began learning the <i>Major System</i> I sometimes had a difficulty with some of the phonectic sounds and it was not second nature to me so I adapted what I called my "<i>My Modified Major System</i>". Instead of learning all of the letters associated with each phonectic sound I just learned one letter with each digit, these are listed in red above. This initially made learning the major System easier for me but limited me some as discussed below in the next segment. I was able to make the numbers 0-100 with this modification that are listed on the page <i>More Numbers</i> but with numbers past 100 it was just not possible to come up with the appropriate word. Fortunately ss I used the system more I got more comfortable with phonetic sounds and eventually was able to make words for numbers above 100 using all the letters associated with a phonetic sound.</p>
+        <p>You can practice recall of the digit/phobnetic sound (letters) associations by clicking on the digit(or letter) to see if you can recall its association:</p>
+         <div id="div1sta" class="w3-bar">
+          <button class ="w3-btn w3-teal btn-showshow" style="border: 0px" onclick="ShowNumbers('div1sta')">Show Digits</button>
+          <button class ="w3-btn w3-teal btn-showshow" style="border: 0px" onclick="ShowImages('div1sta')">Show Letters</button>        
+          <button class="btn" onclick="toggleNumbers(this, 0, `<span style='color:red'>s</span>, z, soft c (e.g. century, ceiling)`)">0</button>
+          <button class="btn" onclick="toggleNumbers(this, 1, `<span style='color:red'>t</span>, d`)">1</button>
+          <button class="btn" onclick="toggleNumbers(this, 2, `<span style='color:red'>n</span>`)">2</button>
+          <button class="btn" onclick="toggleNumbers(this, 3, `<span style='color:red'>m</span>`)">3</button>
+          <button class="btn" onclick="toggleNumbers(this, 4, `<span style='color:red'>r</span>`)">4</button>
+          <button class="btn" onclick="toggleNumbers(this, 5, `<span style='color:red'>L</span>`)">5</button>
+          <button class="btn" onclick="toggleNumbers(this, 6, `<span style='color:red'>sh</span>, ch, j (e.g. jude), soft g (e.g. gentle)`)">6</button>
+          <button class="btn" onclick="toggleNumbers(this, 7, `<span style='color:red'>k</span>, hard c (e.g. cat, cut), ck (e.g. duck), hard g (e.g. gut)`)">7</button>
+          <button class="btn" onclick="toggleNumbers(this, 8, `<span style='color:red'>f</span>, v, ph`)">8</button>
+          <button class="btn" onclick="toggleNumbers(this, 9, `<span style='color:red'>p</span>, b`)">9</button>
+        </div>
+    </ul>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Convert Phonetic Sounds(Letters) into Words (Mental visual Images)</h1>
+        <p>After converting the 10 digits into phonetic sounds (letters) whole words can be made by adding vowels and other letters in line with the <i>Major System</i> rules outlined above. The resulting words can then be visualized as mental visual images that represent the original numbers. Once we get the mental visual image of a number then associations, both links and the method of loci, can be used with the mental visual image as before.</p>
+        <p>This makes the <i>Major System</i> very powerful memory system as it allows for the creation a numerous number of words and mental visual images to represent numbers.</p>
+        <p><span style='font-size:20px; color: #FF0000;'>&#9733;</span>As discussed above when I started with the <i>Major System</i> I limited the letters that represented each digit to those in red above and premade numbers 0-100  Even then limiting the letters representing each digit to a single letter using phonics helped me recall a number such as 10 listed below. Make the phonectic sound for the t and then the s and usually the word you using, e.g. toes, will pop into your mind.</p>
+        <p>The following are examples of the first eleven numbers and the resulting mental visual images I personally use. Also I gave an example how each mental visual image could be linked with the previous or next mental visual image in a list.</p>
+
+        <ul  style="list-style-type:none;">
+          <li>0 = <span style="color: red;">s</span>aw. Remember vowels and w have no meaning. Picture a handsaw cutting the previous or next mental visual image.</li>
+          <li>1 = <span style="color: red;">t</span>ie. Remember vowels have no meaning. Mentally visualize an image of a bright red tie. For a link the tie could be wrapped around the previous or next mental visual image. </li>
+          <!-- <li>1 = tie <img src="images/tie.jpg" width="50" height="60"></li> -->
+          <li>2 = <span style="color: red;">N</span>oah. Remember vowels and h have no meaning. Mentally visualize an image of an elderly man dressed in a white robe with a beard and a staff. For a link Noah could be standing on the previous or next mental visual image.</li>
+          <li>3 = <span style="color: red;">m</span>ow. Remember vowels and w have no meaning. Mentally visualize an image of a lawn mower. For link it could be mowing the previous or next mental visual image.</li>
+          <!-- <p>3 = mow <img src="images/mow.jpg" width="50" height="60"> </p> -->
+          <li>4 = <span style="color: red;">r</span>ow. Remember vowels and w have no meaning. Mentally visualize an image of an oar. For a link the previous or next mental visual image. could be doing the rowing.</li>
+          <!-- <p>4 = row <img src="images/row.jpg" width="50" height="60"> </p> -->
+          <li>5 = <span style="color: red;">L</span>aw. Remember vowels and w have no meaning. Mentally visualize an image of a gold lawman's badge in the shape of a star with sharp points. For a link it could be imbedded with the sharp points in the previous or next mental visual image.</li>
+          <!-- <p>5 = law <img src="images/law.jpg" width="50" height="60"> </p> -->
+          <li>6 = <span style="color: red;">s</span>hoe. Remember vowels and h have no meaning. Picture an old brown shoe. For a link the previous or next mental visual image could be in the shoe. </li>
+          <!-- <p>6 = shoe <img src="images/shoe.jpg" width="50" height="60"> </p> -->
+          <li>7 = <span style="color: red;">k</span>ey. Remember vowels and y have no meaning. Picture an antique gold key. For a link in can be sticking in the previous or next mental visual image.</li>
+          <!-- <p>7 = key <img src="images/key.jpg" width="50" height="60"> </p> -->
+          <li>8 = <span style="color: red;">f</span>ee. Remember vowels have no meaning. I picture a stack of gold coins. For a link they could be covering up and crushing the previous or next mental visual image.</li>
+          <!-- <p>8 = fee <img src="images/fee.jpg" width="50" height="60"> </p> -->
+          <li>9 = <span style="color: red;">p</span>aw. Picture a severed animals paw (remember a gruesome mental image is stronger) or you could use pie. Remember vowels and w have no meaning. For a link picture the paw could be pawing the previous or next mental visual image.</li>
+          <!-- <p>9 = paw <img src="images/paw.jpg" width="50" height="60"> </p> -->
+          <li>10 = <span style="color: red;">t</span>oe<span style="color: red;">s</span>. Remember vowels have no meaning. Picture toes walking on the previous or next mental visual image.</li>
+          <!-- <p>10 = toes <img src="images/toes.jpg" width="50" height="60"> </p> -->
+          <li></li>
+        </ul>
+         <p>You can practice recall of the words (mental visual images) associations I use below by clicking on the digit(or letter) to see if you can recall its association:</p>
+         <div id="div2num" class="w3-bar">
+          <button class ="w3-btn w3-teal btn-showshow" style="border: 0px"  onclick="ShowNumbers('div2num')">Show Numbers</button>
+          <button class ="w3-btn w3-teal btn-showshow" style="border: 0px" onclick="ShowImages('div2num')">Show Words</button>
+          <button class="btn" onclick="toggleNumbers(this, 0, `<span style='color:red'>s</span>aw`)">0</button>
+          <button class="btn" onclick="toggleNumbers(this, 1, `<span style='color:red'>t</span>ie`)">1</button>
+          <button class="btn" onclick="toggleNumbers(this, 2, `<span style='color:red'>N</span>oah`)">2</button>
+          <!-- <button class="btn" onclick="toggleNumbers(this, 3, 'mow')">3</button> -->
+          <button class="btn" onclick="toggleNumbers(this, 3, `<span style='color:red'>m</span>ow`)">3</button>
+          <button class="btn" onclick="toggleNumbers(this, 4, `<span style='color:red'>r</span>ow`)">4</button>
+          <button class="btn" onclick="toggleNumbers(this, 5, `<span style='color:red'>l</span>aw`)">5</button>
+          <button class="btn" onclick="toggleNumbers(this, 6, `<span style='color:red'>sh</span>oe`)">6</button>
+          <button class="btn" onclick="toggleNumbers(this, 7, `<span style='color:red'>k</span>ey`)">7</button>
+          <button class="btn" onclick="toggleNumbers(this, 8, `<span style='color:red'>f</span>ee`)">8</button>
+          <button class="btn" onclick="toggleNumbers(this, 9, `<span style='color:red'>p</span>aw`)">9</button>
+          <button class="btn" onclick="toggleNumbers(this, 10, `<span style='color:red'>t</span>oe<span style='color:red'>s</span>`)">10</button>
+        </div>
+        <p>You will find you can do a lot with just eleven numbers as you can link two mental visual images together to make a longer number.</p>
+        <p>Even better is learning more numbers (eg 00 -100). When a number outside the 0-100 range was needed there are two options. You could link numbers you already know such as a mental visual image of mare(34) bringing me mail(35) would be 3435. The other option is the create your own mental visual image such as hammermill (3435).  I find creating 3 digit numbers to be fairly easy. I struggle more making up numbers longer than 3 digits on the fly and almost always link 1 & 2 digit numbers I already have a mental visual image memorized for. </p>
+        <p> AI can help you create words but sometimes with a number such as 1030 you will get "as a regular English word, this pattern basically doesn’t occur" then you will have to link several words such as toes (10) sitting on a bed of moss (30).</p>
+        <p>There are several useful sites that can help with producing images for numbers:</p>
+        <ul style="list-style-type:none;">
+            <li><a href="https://mnemonic.ninja/convert/number" target="_blank"">Mnemonic Ninja</li>
+            <li><a href="https://artofmemory.com/wiki/Major_System_Image_Database/" target="_blank"">Major System Image database</a></li>
+            <li><a href="https://major-system.info/en/?n=89" target="_blank"">Major System database</a></li>
+            <li><a href="https://pinfruit.com/" target="_blank"">pinfruit</a></li>
+        </ul>
+
+        <p>If you are interested this a link to a page that gives examples of more numbers that I personally use: <a class="hyperlink-blue" href="numbersmore.html">More Numbers</a></p>
+        
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">The Peg System</h2> 
+     <p>Before we go on it would be good to discuss one of the benefits of using "premade" mental visual images vs "made on the fly" mental visual images of numbers. First as discssed above unless you are really proficient in using the <i>Major Memory System</i> it is quicker if you already have a constant list of mental visual image for at least some numbers. Second if you have "premade mental visual images" you find what is called the <i>Peg System</i> useful. The following paragraphs will explain by example how the <i>Peg System</i>works and demonstate how it may be useful.</p>
+    <p>You may already know by "rote" memory numbers 1-10 on the preceding page, if not take a moment to learn them. AI says the 5 most common causes of death in the United States in last year were heart disease, cancer, unintentional injuries, stroke and chronic lung disease. I can remeber these by the link method where a would see a beating heart(heart disease) with a crab(cancer) eating it with its claws. I hit the crab with a hammer (unintentional injuries) to get it off the heart and the crab shoots out lightening bolts (stroke) when it is struck and cracks open. The lightening bolts pop a balloon shpaed as lungs(chronic lung disease) nearby.</p>
+    <p>Now you could even rememeber a much longer list by linking mental images but if someone asked you for the 4th most common cause of death you would probably how to recall them one by one sequentially. The <i>Peg System</i> makes this easier to go straight to the 4th or even 40th item in a list. To do this lets link the causes of death to the numbers we have learned. I picture a tie wrapping aound a beating heart, Noah with a crab implaed by his staff, a lawn mowing running over a pile of hammers with a terrible noise, a man rowing a boat getting struck with lightening bolts, and a law badge popping a lung shaped ballon with one of it's sharp points. Now if someone where to ask me the 4th most common cause I would picture a man rowing a boat getting strick lightening bolts and know it was strokes.</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <div class="w3-row" >
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Spaced Repetition (practice)</h1> 
+      <p>This is covered under the webpage <i>Spaced Repetition</i> but since the <i>Major System</i> requires the most rote memorization of all the memory system techniques it is good to mention here also. There are many ways to pratice rote memorization but personally for numbers way back when I started I used falsh cards made out of index cards with the number on the front and the corresponding word on the back. For a while I went over the flash cards daily and now years later very rarely. Again as discussed previously your own mental visual images, if different from mine, are always best for you!</p>
+      <p></p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h2  class="w3-text-teal">Other Visual Number Systems</h2>
+      <p>There are other memory systems that can be used to memorize numbers such as the <i>Shaper System</i> and the <i>Rhyme System</i>.</p>
+      <p>The <i>Shaper System</i> assigns a mental visual image to each digit based on its shape. For example 0 can be an egg, 1 a pencil, 2 a swan, 3 lips, 4 a sail, 5 a unicycle, 6 a cherry, 7 a boomerang, 8 a snowman, and 9 a balloon on a string. The mental visual images can then be linked to produce longer numbers. More examples of additional numbers can be seen at <a href="https://artofmemory.com/blog/number-shape-system/" target="_blank"">Art of Memory: The Shaper System</a> and <a href="https://artofmemory.com/wiki/The_Shaper_System/" target="_blank"">Art of Memory: How to Use the Number Shape System</a>.</p>
+
+      <P>The "Rhyme System" assigns a mental visual image to each digit by a word that rhymes with the  digit. For example 0 is a hero, 1 is a gun, 2 is a shoe, 3 is a tree, 4 is a door, 5 is a hive, 6 is sticks, 7 is heaven, 8 is a gate and 9 is a vine or wine. The mental visual images can then be linked to produce longer numbers. More information can be found at <a href="https://www.magneticmemorymethod.com/number-rhyme/" target="_blank"">Magnetic Memory Method</a>.</P>
+
+
+       <p>It is readily apprarent these systems while simple are not as powerful as the Major System. SOmetimes if a limited number of numbers are needed thay are adequate and in the in the 2025 American Heart Association Basic Life Support Algorithms there are really not many different numbers needed. Regardless of what type of visual number system you use the following numbers are the ones that are used in the 2025 American Heart Association Basic Life Support Algorithms that are covered in this website. In the webpages of this site I will use the <i>Major System</i> numbers but you can feel free to substitute your preferred systems numbers.</p>  
+       
+         <ul style="list-style-type:none;">
+          <li><b>Number 2:</b></li>
+          <ul style="list-style-type:none;">
+             <li>Shaper System: A swan.</li>
+            <li>Rhyme System: A shoe.</li>
+            <li>Major System: Noah.</li>           
+          </ul> 
+          <li><b>Number 3:</b></li>
+          <ul style="list-style-type:none;">
+             <li>Shaper System: lips.</li>
+            <li>Rhyme System: A tree.</li>
+            <li>Major System: mow.</li>           
+          </ul> 
+          <li><b>Number 6:</b></li>
+          <ul style="list-style-type:none;">
+             <li>Shaper System: A cannon.</li>
+            <li>Rhyme System: Sticks.</li>
+            <li>Major System: A shoe.</li>           
+          </ul>
+          <li><b>Number 10:</b></li>
+          <ul style="list-style-type:none;">
+             <li>Shaper System: A drum stick and a drum.</li>
+            <li>Rhyme System: A hen.</li>
+            <li>Major System: Toes.</li>           
+          </ul>               
+          <li><b>Number 30:</b></li>
+          <ul style="list-style-type:none;">
+            <li>Shaper system: A jelly fish.</li>
+            <li>Rhyme system: Birdie.</li>
+            <li>Major system: Moss.</li>           
+          </ul>   
+          <li><b>Number 60:</b></li>
+          <ul style="list-style-type:none;">
+            <li>Shaper system: A golf club with ball.</li>
+            <li>Rhyme system: Dixie.</li>
+            <li>Major system: Shoes.</li>           
+          </ul> 
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  
+<!-- END MAIN -->
+</div>
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+
+
+
+</script>
+
+</body>
+</html>

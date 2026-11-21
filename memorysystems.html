@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- My stuff -->
+<link rel="stylesheet" href="shared.css">
+<script src="shared.js" defer></script>
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+</head>
+<body>
+<!-- Scroll button -->
+<button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <!-- Menu button -->
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <!--Header Title: Removes underline from <a/>, removes hand cursor when hover over with mouse pointer, adjust title wording by width -->
+    <a href="#" class="w3-bar-item w3-hide-small  w3-hide-medium" style="text-decoration: none; cursor: default;">Memory System Techniques/Basic Life Support Algorithms </a>
+    <a href="#" class="w3-bar-item  w3-hide-large" style="text-decoration: none; cursor: default;">Memory Systems Techniques/BLS Algorithms</a>
+  </div>
+</div
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn1 " href="index.html">Introduction</a>
+  <a class="w3-bar-item w3-button w3-hover-black sectionbtn" href="javascript:void(0)"><b>I. Memory System Techniques</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn1 selectedbtn" href="memorysystems.html">Overview</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn1" href="overviewsampleproblem.html">Practice Algorithm</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="mindmapping.html">1. Mind Mapping</a> 
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="visualmnemonics.html">2. Visual Mnemonics</a> 
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn3" href="numbers.html">~ Visual Numbers & Letters</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn3" href="numbersmore.html">~ More Numbers</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="links.html">3. Link Associations</a>  
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="methodofloci.html">4. Method of Loci Associations</a> 
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="spacedrepetition.html">5. Spaced Repetition</a>  
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Overveiw Memory System Techniques</h1>
+      <p>Memory system techniques can also be referred to as memory mnemonics which basically means techniques to aid information recall. There many forms of memory system techniques such as acrostic mnemonics as “Every Good Boy Does Fine” for musical notes or rhyming mnemonics such as "30 days hath September, April, June ...". In medicine there are many acronym mnemonics such as ABC (Airway,Breathing,Circulation) and CAB (Compressions, Airway,Breathing).</p>
+
+      <p>Several types of memory system techniques are covered in this website as listed below.</p>
+        <ul style="list-style-type:decimal;">
+          <li>Mind Mapping (information is simplified and organized around a single central topic with radial branches of information)</li>
+          <li>Visual Mnemonics (information is attached to mental visual images)</li>
+          <li>Links Associations (mental visual images of information are associated with one another)</li>
+          <li>Method of Loci Associations (mental visual images of information are associated with mental images of known locations)</li>
+          <li>Spaced Repetition (information learned with memory sytem techniques still need pratice to reinforce long term recall but not near as much as with rote memorization)</li>
+        </ul>
+      <p>You will not have to research far to find sometimes the termonolgy of memory system techniques sometimes confusing. In actual practice <i>Mind Mapping</i> and <i>Spaced Repetition</i> are more simplying/organizing information as well as praticing the learned information and not truly classic memory system techniques. <i>Visual Mnemonics</i>, <i>Link Associations</i> and <i>Method of Loci Associations</i> are all sometimes included under the term <i>Visual Mnemonics</i>. <i>Method of Loci Associations</i> are often called <i>Memory Palaces</i>. Naturally everyone who uses memory system techniques will have their own preferences but I find <i>Visual Mnemonics</i> and <i>Link Associations</i> the cornerstone memory system techniques I use. I will use <i>Mind Mapping</i> and/or <i>Method of Loci Associations</i> with more complex memory challenges. Of course some amount of <i>Spaced Repetition</i> depending of the situation is never wrong.</p>
+      <p>Ideally one would be familiar memory system techniques before accessing this website for which the previous referenced book would be an excellant start. For those not familar with memory system techniques you can still by working through this website get a condensed exposure to the basic concepts. We will start with a non-medical pratice algorithm about <i>Fish Bait</i> and work through the componemts of memory system techniques needed to memorize the algorithm. Then we will be prepared to apply memory system techniques to basic life support algorithms.</p>
+      
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Other Considerations</h2>
+      <p>The use of memory system techniques that I describe  in this website are how I practice them which may not be exactly the same as you read of another author practicing memory system techniques. That is one of the strengths of memory system techniques, the basic concepts are the same but each individuals customization is what makes it work for anyone. When we get to mental visual images I will stress your initial personal menat visual images will usually be better for you than the images I may use as an example. When we get to numbers you will see how I simplied the major system when I was younger secondary to may difficulty with phonics which if I had started at my age now I probably would not do as I am more comfortable with phonics. The important point is to customize the memory system techniques to what works for you.</p>
+      <p>In the pages of this website the term "rote memorization" when used refers to the type of memorization we have all done since childhood such as learning the abc's or <i>The Pledge of Allegiance</i>. Rote memorization is still required some with memory systems, especially with numbers, but just not near as much. Also I always felt I had adequated rote memory but sometimes dreaded learning information by it reviewing over and over in my head, using flash cards,etc. Personally with the memory system techniques described in this website I do not dread the learning of new information and sometimes find it can even be enjoyable and sometimes depending on the ridiculous mental visual images I may use entertaining, hopefully this will be the same for you!</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <!-- <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Heading</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div> -->
+
+  
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

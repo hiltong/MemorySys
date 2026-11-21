@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CPR</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- My stuff -->
+<link rel="stylesheet" href="shared.css">
+<script src="shared.js" defer></script>
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+
+
+</style>
+</head>
+<body>
+  <!-- Scroll button -->
+<button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <!-- Menu button -->
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <!--Header Title: Removes underline from <a/>, removes hand cursor when hover over with mouse pointer, adjust title wording by width -->
+    <a href="#" class="w3-bar-item w3-hide-small  w3-hide-medium" style="text-decoration: none; cursor: default;">Cardiopulmonary Resuscitation with Memory Methods</a>
+    <a href="#" class="w3-bar-item  w3-hide-large" style="text-decoration: none; cursor: default;">CPR with Memory Methods</a>
+  </div>
+</div>
+
+<!-- Sidebar with Menu -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button  w3-xlarge" href="index.html"><b>Introduction</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black w3-xlarge" href="memorymethods.html"><b>Memory Methods</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn " href="problem.html">Example Problem</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="images.html">Word Images</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="images.html">Memory Links</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="images.html">Memory Maps</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="images.html">Memory Places</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="numbers.html">Number Images</a>
+  <!-- <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="numbersmore.html">More Numbers</a> -->
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="#">Let's Do It!</a>
+  <a class="w3-bar-item w3-button w3-hover-black w3-xlarge" href="adultbls.html"><b>Adult Basic Life Support</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="#">Mind Map</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="#">Images</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="#">Memory Palace</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="#">Link It Together</a>
+  <a class="w3-bar-item w3-button w3-hover-black w3-xlarge selectedbtn" href="#"><b>More Uses</b></a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">More Uses of Memory Methods</h1>
+      <p>There are many uses for memory methods, really thing that requires memory. Listed below are some additional uses and most of them are much simpler than remembering CPR.</p>
+      <p>Foreign langauges (chap 7), retaining reading material (chap ) names and faces (chap 8) absentmindedness (chap 9) all chapters good ex of mental images and associations </p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <div class="w3-row ">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Lists & To Do Lists</h1>
+      <p>Say my wife asks me to the grocery store the floowing day when a I run errands to buy a rotisery chicken, can of whipped cream, bottled water and lemon icecream</p>
+      <p>Now the day before I review my to do lists for the next day. I need to get gas in the car, go to the grocery store and pick up clothes at the cleaners.</p>
+      <p>shopping mlists, errands</p>
+      <p>Shopping at lowes Aisle 52|Bay 11</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Speeches</h1>
+      <p>Memory methods have been used since ancient times for speeches by orators. First if one is to give a speech they should be knowledgeablew about which they are speeking. The problem is having prompts about the individual paragraphs in the speech to enable presentation in an orderly manner without forgetting importnat paragraphs.</p>
+      <p></p>
+      <P>I can testify when in medical training being able to give a rather lengthly presentation on a subject without refering to notes was a source of pride to me. At first you maybe be nervous that memory systems may not work under pressure (but they wiil) so take your notes with you but be susprised it you need to refer to them!</P>
+      <p>Chapter 6</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+
+<div class="w3-row ">
+    <div id="test" class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Names</h1>
+      <p>Intangible</p>
+      <p>There are many examples of intangible information in daily life that require substitute mental images such as personal names. If you meet a new acquintance named Jack who has a large nose as a distinguishing feature you might create a mental visual image of a car jack protruding from a nostril in his large nose to help you remember his name.</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Phone Numbers</h1>
+      <p>Songs</p>
+      <p>Aisle and Bays 52/11</p>
+      <p>Parking Places</p>
+      <p>Room  Numbers</p>
+      <p>Visual cards</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+<div class="w3-row ">
+    <div  class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Galatians 5:22-23</h1>
+      <p>After a Bible study I wished to remember the 9 fruits of the Spirit (love, joy, peace, patience, kindness, goodness, faithfulness, gentleness and self-control) for a daily personel prayer which was easily done in less than a minute using visual mnemonics and links.</p>
+      <p>I first pictured a glacier (Galatians) and since this is my only subject from Galatians I memorized I did not have to memorize chapter and verse. On the glacier is a red heart (love) lying flat and a person I know named Joy (Joy) standing on the heart. In her hands are a dove (peace) and hanging from the dove's mouth is a rescue basket stretcher with a patient (patience) in it. The patient is holding hold to one side a long piece of firewood kindling (kindness) and balanced on the far end of the kindling is a pan of Bananas Foster (goodness). In the pan of Bananas Foster are two praying hands (faithfulness). Held in the praying hands are a lamb (gentleness) and riding the lamb is a cowboy (self-control).</p>
+      <p>Of course I had to imbedded it stronger in my memory by repeating it several times the first day and now I just repeat it daily when I use it first thing in the morning. </p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+  
+<!-- END MAIN -->
+</div>
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+
+
+
+</script>
+
+</body>
+</html>

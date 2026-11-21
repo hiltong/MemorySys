@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CPR</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- My stuff -->
+<link rel="stylesheet" href="shared.css">
+<script src="shared.js" defer></script>
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+
+
+</style>
+</head>
+<body>
+  <!-- Scroll button -->
+<button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <!-- Menu button -->
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <!--Header Title: Removes underline from <a/>, removes hand cursor when hover over with mouse pointer, adjust title wording by width -->
+    <a href="#" class="w3-bar-item w3-hide-small  w3-hide-medium" style="text-decoration: none; cursor: default;">Learning CPR with Visual Mnemonics</a>
+    <a href="#" class="w3-bar-item  w3-hide-large" style="text-decoration: none; cursor: default;">Basic CPR with Visual Mnemonics</a>
+  </div>
+</div>
+
+<!-- Sidebar with Menu -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black sectionbtn" href="javascript:void(0)"><b>Memory Systems</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="index.html">Introduction</a>  
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="memorysystems.html">Visual Mnemonics</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="numbers.html">Visual Numbers</a>
+  <!-- <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="numbersshaper.html">Shaper System</a> -->
+  <!-- <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="numbersrhyme.html">Rhyme System</a> -->
+  <!-- <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="numbersmajor.html">Major System</a> -->
+  <!-- <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="numbersmore.html">More Numbers</a> -->
+  <a class="w3-bar-item w3-button w3-hover-black sectionbtn" href="javascript:void(0)"><b>Basic Life Support</b></a>
+   <a class="w3-bar-item w3-button w3-hover-black indentedbtn selectedbtn" href="cpr.html">Overview</a>  
+  <!-- <a class="w3-bar-item w3-button w3-hover-black sectionbtn" href="javascript:void(0)"><b>Adult Basic Life Support</b></a> -->
+  <!-- <a class="w3-bar-item w3-button w3-hover-black indentedbtn " href="bls.html">Visual Mnemonics</a> -->
+ <a class="w3-bar-item w3-button w3-hover-black " href="javascript:void(0)"><b>Foreign Body Airway Obstruction</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="fbaooverview.html">Overview</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="javascript:void(0)">Mind Mapping</a>    
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn " href="javascript:void(0)">Visual Mnemonics</a>
+  <a class="w3-bar-item w3-button w3-hover-black w3-xlarge" href="moreuses.html"><b>More Uses</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="xtest1.html">TESTS1</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="xtest2.html">TESTS2</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Overview Basic Life Support</h1>
+      <p>Basic life support is a type of emergency care and is an important skill for anyone who may encounter a cardiac or respiratory emergency in a setting where advanced medications and interventions are not initially availble. This could be at home, work or a public place such as a resturant or ball game. In these settings all you would have initially until helped arrived would be your skills and knowledge and if fortunate an AED/Debrillator and mabye naloxone (e.g. Narcan).  Advanced life support is not addressed in this website.<p>
+      <p> The initial knowledge conveyed by the American Heart Association is in a series of algorithms. The main purpose of this website is to help you memorize these algorithms so that you can use them in an emergency situation by the use of memory systems. Of course there is much more to being able to effectively provide basic life support than just memorizing the algorithms. The section on <i>Preparedness</i> discusses this further. </p>
+
+
+      <p>At the <a href="https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms" target="_blank" rel="noopener noreferrer">2025 American Heart Association Guidelines for Cardiopulmonary Resuscitation and Emergency Cardiovascular Care Algorithms</a> the are the following algoithms are listed under basic life support:</p> 
+    
+          <ul style="list-style-type:disc;">
+           <!--  <li><p><span class="popup" onclick="openPopupPediatricDef()">Pediatric<span class="popuptext" id="PopupPediatricDef">Infant (excludes resuscitation of the newborn infant) until signs of puberty (breast development in females and presence axiallary hair in males).</span></span> BLS Algorithm (Infants to Puberty) for Healthcare Professionals—Single Rescuer</p></li>
+            <li><p><span class="popup" onclick="openPopupPediatricDef()">Pediatric<span class="popuptext" id="PopupPediatricDef">Infant (excludes resuscitation of the newborn infant) until signs of puberty (breast development in females and presence axiallary hair in males).</span></span> BLS Algorithm (Infants to Puberty) for Healthcare Professionals—2 or More Rescuers</p></li>      
+            <li><p><span class="popup" onclick="openPopupAdultDef()">Adult<span class="popuptext" id="PopupAdultDef">Signs of puberty and beyond (breast development in females and presence axiallary hair in males).</span></span> Basic Life Support Algorithm for Healthcare Professionals</p></li> -->
+
+             <li>Pediatric Basic Life Support Algorithm for Healthcare Professionals—Single Rescuer</p></li>
+            <li>Pediatric Basic Life Support Algorithm for Healthcare Professionals—2 or More Rescuers</p></li>      
+            <li>Adult Basic Life Support Algorithm for Healthcare Professionals</p></li>
+          </ul>
+
+      <!-- <p>The age ranges for the algorithms are defined as follows:</p> 
+        <ul style="list-style-type:disc;">
+          <li>Pediatric: Infant until signs of puberty (breast development in females and presence axiallary hair in males)
+            <ul>
+              <li>Infant: Less than one year of age</li>
+              <li>Child: One year of age to signs of puberty (breast development in females and presence axiallary hair in males)</li>
+            </ul>
+          </li>
+          <li>Adult: Signs of puberty and beyond (breast development in females and presence axiallary hair in males)</li>
+        </ul>   -->
+
+      <p>The age ranges for the basic life support algorithms are defined as follows:</p> 
+        <ul style="list-style-type:disc;">
+          <li>Pediatric: Infant (excludes resuscitation of the newborn infant) until signs of puberty (breast development in females and presence axiallary hair in males).          
+          <li>Adult: Signs of puberty and beyond (breast development in females and presence axiallary hair in males)</li>
+        </ul>  
+
+      <p>Management of foreign-body airway obstruction has been integrated with basic life support as cardiopulmonary resuscitation is begun if a person with a foreign-body airway obstruction becomes unresponsive. Foreign-body airway obstruction algorithms will be covered in a following section.</p>
+     
+      </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+ <!-- <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Sectiom</h1>
+      
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div> -->
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Grouping of information</h1>
+        <p>Before we strat using visual mnemonics to memorize the algorithms there is some initial preparation that can make the task more easier and more logical. Initially reading over these algorithms seems like a lot to absorb but after several readings you begin to see three things that we will initialy do to prepare:  1) The algorithms findings and actions can be placed in groups 2) Simplify wording and arrangement of the algorithms if it doesn't change the nature of the algorithm.  3) The algorithms have more components common than not</p>   
+      <p>As I read over the algorithms I see all three can be divided into the following groups of findings and actions:</p>
+      <ul style="list-style: disc;">
+        <li>Initial Assesment</li>
+        <li>Stable Unrepsonsive Patient
+          <ul >
+            <li>Moniter</li>
+          </ul>
+        </li>
+        <li>Respiratory Arrest
+          <ul >
+            <li>Ventilation Support</li>
+          </ul>
+        </li>
+        <li>Cardiac Arrest
+          <ul >
+            <li>CPR</li>
+          </ul>
+        </li>
+      </ul>
+   <p>This grouping will be very helpful when we later use our memory palaces.</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <div class="w3-row ">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Simplify wording and arrangement</h1>
+      <p>The best example is how I organized the initial assessment into the following:</p>
+       <ul style="list-style: disc;">
+        <li>Verify scene safety </li>
+        <li>Check for responsiveness </li>
+        <li>Shout for help </li>
+        <li>Call 911 (This is what I would actually say in real life rather than "Activate Emergency Response System" and it also leads to a good visual mnemonic of a cell phone with the numbers 911 on the screen.)</li>
+        <li>Get an AED/defibrillator </li>
+        <li>Get naloxone if possible opiod overdose (in the algorithms this was in sveral places which made the algorithm more complex. Moving it to the top simplifys the algorithm.)</li>
+        <li>Check for breathing and pulse but no more than 10 seconds</li>
+       </ul>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+<div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Identify common components</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+
+  <!-- <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Heading</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+ -->
+  
+<!-- END MAIN -->
+</div>
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CPR</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- My stuff -->
+<link rel="stylesheet" href="shared.css">
+<script src="shared.js" defer></script>
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+
+</head>
+<body>
+  <!-- Scroll button -->
+<button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <!-- Menu button -->
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <!--Header Title: Removes underline from <a/>, removes hand cursor when hover over with mouse pointer, adjust title wording by width -->
+    <a href="#" class="w3-bar-item w3-hide-small  w3-hide-medium" style="text-decoration: none; cursor: default;">Cardiopulmonary Resuscitation with Visual Mnemonics</a>
+    <a href="#" class="w3-bar-item  w3-hide-large" style="text-decoration: none; cursor: default;">CPR with Memory Methods</a>
+  </div>
+</div>
+
+<!-- Sidebar with Menu -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn1" href="index.html">Introduction</a>
+  <a class="w3-bar-item w3-button w3-hover-black sectionbtn" href="javascript:void(0)"><b>I. Memory Systems</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn1 " href="memorysystems.html">Memory Systems</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn1" href="overviewsampleproblem.html">Practice Algorithm</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="mindmapping.html">1. Mind Mapping</a> 
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="visualmnemonics.html">2.Visual Mnemonics</a> 
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn3" href="numbers.html">2.A. Visual Numbers</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn3 selectedbtn" href="numbersmore.html">2.B. More Numbers</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="links.html">3. Links</a>  
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="methodofloci.html">4. Method of Loci</a> 
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="spacedrepetition.html">5. Spaced Repetition</a>  
+  
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+
+  
+
+ <div class="w3-row w3-padding-64">
+    <div id="divmnumim" class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">More Numbers</h1>
+       <!-- <h4>Numbers/Image</h4> -->
+        <p>Using the <i>Major System</i>  these are numbers 0-100 that I use as premade mental visual images. You can practice reviewing by clicking on the number (or image if showing) to see the corresponding image or number. Remember the images are what I personally use so use an image that works best for you.</p>
+        <p>Some memory experts are reported to have a list of a 1000 or more premade numbers. For longer numbers you encounter you can link premade numbers. By linking premade numbers together you can quickly and accurately remember a long digit number. You can also make up a number for the occasion. For example if you are faced with the number 1020 you could picture toes(10) being stuck up a nose(20) or you could use a word such as Tysons(1020) which to me is a mental image of a Tysons frozen dinner.</P>
+        <button class ="w3-btn w3-black btn-showshow" onclick="ShowNumbers('divmnumim')">Show All Numbers</button>
+        <button class ="w3-btn w3-black btn-showshow" onclick="ShowImages('divmnumim')">Show All Images</button>
+        <!-- <button class="btn" onclick="toggleNumbers(this, 0, 'saw')">0</button> -->
+        <button class="btn" onclick="toggleNumbers(this, 0, `<span style='color:red'>s</span>aw (e.g., hand saw, others: sea, sew)`)">0</button>
+        <!-- <button  class="btn" onclick="toggleNumbers(this, '00', 'see-saw')">00</button> -->
+        <button class="btn" onclick="toggleNumbers(this, '00', `<span style='color:red'>s</span>ee<span style='color:red'>s</span>aw (e.g., playground seesaw, others: saws, seus)`)">00</button>
+        <!-- <button class="btn" onclick="toggleNumbers(this, '01', 'seat')">01</button> -->
+        <button class="btn" onclick="toggleNumbers(this, '01', `<span style='color:red'>s</span>ea<span style='color:red'>t</span> (e.g., chair with legs, others: suit, soot)`)">01</button>
+        <!-- <button class="btn" onclick="toggleNumbers(this, '02', 'sun')">02</button> -->
+          <button class="btn" onclick="toggleNumbers(this, '02', `<span style='color:red'>s</span>u<span style='color:red'>n</span> (e.g., the sun, others: sauna, seine)`)">02</button>
+        <button class="btn" onclick="toggleNumbers(this, '03', 'Sam, sumo')">03</button>
+        <button class="btn" onclick="toggleNumbers(this, '04', 'sear, sore')">04</button>
+        <button class="btn" onclick="toggleNumbers(this, '05', 'sail')">05</button>
+        <button class="btn" onclick="toggleNumbers(this, '06', 'sash')">06</button>
+        <button class="btn" onclick="toggleNumbers(this, '07', 'sock')">07</button>
+        <button class="btn" onclick="toggleNumbers(this, '08', 'sofa')">08</button>
+        <button class="btn" onclick="toggleNumbers(this, '09', 'soap, soup, sap')">09</button>
+        <button class="btn" onclick="toggleNumbers(this, 1, 'tie')">1</button>
+        <button class="btn" onclick="toggleNumbers(this, 2, 'Noah')">2</button>
+        <button class="btn" onclick="toggleNumbers(this, 3, 'mow')">3</button>
+        <button class="btn" onclick="toggleNumbers(this, 4, 'row')">4</button>
+        <button class="btn" onclick="toggleNumbers(this, 5, 'law')">5</button>
+        <button class="btn" onclick="toggleNumbers(this, 6, 'shoe')">6</button>
+        <button class="btn" onclick="toggleNumbers(this, 7, 'key')">7</button>
+        <button class="btn" onclick="toggleNumbers(this, 8, 'fee')">8</button>
+        <button class="btn" onclick="toggleNumbers(this, 9, 'paw')">9</button>
+        <button class="btn" onclick="toggleNumbers(this, 10, 'toes')">10</button>
+        <button class="btn" onclick="toggleNumbers(this, 11, 'tit')">11</button>
+        <button class="btn" onclick="toggleNumbers(this, 12, 'tin')">12</button>
+        <button class="btn" onclick="toggleNumbers(this, 13, 'tom')">13</button>
+        <button class="btn" onclick="toggleNumbers(this, 14, 'tire')">14</button>
+        <button class="btn" onclick="toggleNumbers(this, 15, 'tool')">15</button>
+        <button class="btn" onclick="toggleNumbers(this, 16, 'tush')">16</button>
+        <button class="btn" onclick="toggleNumbers(this, 17, 'tack')">17</button>
+        <button class="btn" onclick="toggleNumbers(this, 18, 'taffy')">18</button>
+        <button class="btn" onclick="toggleNumbers(this, 19, 'tape')">19</button>
+        <button class="btn" onclick="toggleNumbers(this, 20, 'nose')">20</button>
+        <button class="btn" onclick="toggleNumbers(this, 21, 'net')">21</button>
+        <button class="btn" onclick="toggleNumbers(this, 22, 'nun')">22</button>
+        <button class="btn" onclick="toggleNumbers(this, 23, 'Nemo (Captain Nemo\'s submarine)')">23</button>
+        <button class="btn" onclick="toggleNumbers(this, 24, 'Nero (Nero playing a fiddle)')">24</button>
+        <button class="btn" onclick="toggleNumbers(this, 25, 'nail')">25</button>
+        <button class="btn" onclick="toggleNumbers(this, 26, 'gnash (g is silient\, teeth gnashing)')">26</button>
+        <button class="btn" onclick="toggleNumbers(this, 27, 'neck')">27</button>
+        <button class="btn" onclick="toggleNumbers(this, 28, 'naff (poor taste like dirty pants)')">28</button>
+        <button class="btn" onclick="toggleNumbers(this, 29, 'nap (little girl napping)')">29</button>
+        <button class="btn" onclick="toggleNumbers(this, 30, 'moss')">30</button>
+        <button class="btn" onclick="toggleNumbers(this, 31, 'mat')">31</button>
+        <button class="btn" onclick="toggleNumbers(this, 32, 'moon')">32</button>
+        <button class="btn" onclick="toggleNumbers(this, 33, 'mom')">33</button>
+        <button class="btn" onclick="toggleNumbers(this, 34, 'mare')">34</button>
+        <button class="btn" onclick="toggleNumbers(this, 35, 'mail')">35</button>
+        <button class="btn" onclick="toggleNumbers(this, 36, 'mush (a bowl of mush)')">36</button>
+        <button class="btn" onclick="toggleNumbers(this, 37, 'Mack (a type of truck)')">37</button>
+        <button class="btn" onclick="toggleNumbers(this, 38, 'muff (ear muff)')">38</button>
+        <button class="btn" onclick="toggleNumbers(this, 39, 'mop')">39</button>
+        <button class="btn" onclick="toggleNumbers(this, 40, 'rose')">40</button>
+        <button class="btn" onclick="toggleNumbers(this, 41, 'rat')">41</button>
+        <button class="btn" onclick="toggleNumbers(this, 42, 'rain (cloud with rain pouring out)')">42</button>
+        <button class="btn" onclick="toggleNumbers(this, 43, 'ram (mountain ram with curled horns)')">43</button>
+        <button class="btn" onclick="toggleNumbers(this, 44, 'rare (rare steak)')">44</button>
+        <button class="btn" onclick="toggleNumbers(this, 45, 'rail (train track rail)')">45</button>
+        <button class="btn" onclick="toggleNumbers(this, 46, 'rash (red rash)')">46</button>
+        <button class="btn" onclick="toggleNumbers(this, 47, 'rake (garden rake)')">47</button>
+        <button class="btn" onclick="toggleNumbers(this, 48, 'roof (pitched roof)')">48</button>
+        <button class="btn" onclick="toggleNumbers(this, 49, 'rope (coil of rope)')">49</button>
+        <button class="btn" onclick="toggleNumbers(this, 50, 'loss (scoreboard)')">50</button>
+        <button class="btn" onclick="toggleNumbers(this, 51, 'loot (bank bag full of money)')">51</button>
+        <button class="btn" onclick="toggleNumbers(this, 52, 'loon (type of duck)')">52</button>
+        <button class="btn" onclick="toggleNumbers(this, 53, 'lime')">53</button>
+        <button class="btn" onclick="toggleNumbers(this, 54, 'lure (fishing lure)')">54</button>
+        <button class="btn" onclick="toggleNumbers(this, 55, 'lily')">55</button>
+        <button class="btn" onclick="toggleNumbers(this, 56, 'leash')">56</button>
+        <button class="btn" onclick="toggleNumbers(this, 57, 'lock')">57</button>
+        <button class="btn" onclick="toggleNumbers(this, 58, 'leaf')">58</button>
+        <button class="btn" onclick="toggleNumbers(this, 59, 'lip')">59</button>
+        <button class="btn" onclick="toggleNumbers(this, 60, 'shoes')">60</button>
+        <button class="btn" onclick="toggleNumbers(this, 61, 'shit')">61</button>
+        <button class="btn" onclick="toggleNumbers(this, 62, 'shine (searchlight shining)')">62</button>
+        <button class="btn" onclick="toggleNumbers(this, 63, 'Shamu (killer whale)')">63</button>
+        <button class="btn" onclick="toggleNumbers(this, 64, 'shear (type of scissors)')">64</button>
+        <button class="btn" onclick="toggleNumbers(this, 65, 'shell')">65</button>
+        <button class="btn" onclick="toggleNumbers(this, 66, 'shish (shish kabob stick)')">66</button>
+        <button class="btn" onclick="toggleNumbers(this, 67, 'sheik')">67</button>
+        <button class="btn" onclick="toggleNumbers(this, 68, 'sheaf (bundle of grain)')">68</button>
+        <button class="btn" onclick="toggleNumbers(this, 69, 'ship')">69</button>
+        <button class="btn" onclick="toggleNumbers(this, 70, 'kiss (a Hersey kiss)')">70</button>
+        <button class="btn" onclick="toggleNumbers(this, 71, 'kite')">71</button>
+        <button class="btn" onclick="toggleNumbers(this, 72, 'khan (Star Trek villian)')">72</button>
+        <button class="btn" onclick="toggleNumbers(this, 73, 'Kim')">73</button>
+        <button class="btn" onclick="toggleNumbers(this, 74, 'Kerr (basketball player)')">74</button>
+        <button class="btn" onclick="toggleNumbers(this, 75, 'kale')">75</button>
+        <button class="btn" onclick="toggleNumbers(this, 76, 'kosh (OK, weiner)')">76</button>
+        <button class="btn" onclick="toggleNumbers(this, 77, 'kook (crazy person, Beetlejuice)')">77</button>
+        <button class="btn" onclick="toggleNumbers(this, 78, 'Kef (audio speaker)')">78</button>
+        <button class="btn" onclick="toggleNumbers(this, 79, 'keep (castle)')">79</button>
+        <button class="btn" onclick="toggleNumbers(this, 80, 'fuse')">80</button>
+        <button class="btn" onclick="toggleNumbers(this, 81, 'fat (glob of greasy fat)')">81</button>
+        <button class="btn" onclick="toggleNumbers(this, 82, 'fan')">82</button>
+        <button class="btn" onclick="toggleNumbers(this, 83, 'fume')">83</button>
+        <button class="btn" onclick="toggleNumbers(this, 84, 'fire')">84</button>
+        <button class="btn" onclick="toggleNumbers(this, 85, 'file')">85</button>
+        <button class="btn" onclick="toggleNumbers(this, 86, 'fish')">86</button>
+        <button class="btn" onclick="toggleNumbers(this, 87, 'f__k')">87</button>
+        <button class="btn" onclick="toggleNumbers(this, 88, 'fife (musical instrument)')">88</button>
+        <button class="btn" onclick="toggleNumbers(this, 89, 'fop (cleaning thing)')">89</button>
+        <button class="btn" onclick="toggleNumbers(this, 90, 'piss')">90</button>  
+        <button class="btn" onclick="toggleNumbers(this, 91, 'pot')">91</button>
+        <button class="btn" onclick="toggleNumbers(this, 92, 'pan')">92</button>
+        <button class="btn" onclick="toggleNumbers(this, 93, 'Pam')">93</button>
+        <button class="btn" onclick="toggleNumbers(this, 94, 'pear')">94</button>
+        <button class="btn" onclick="toggleNumbers(this, 95, 'pail')">95</button>
+        <button class="btn" onclick="toggleNumbers(this, 96, 'push (table saw push)')">96</button>
+        <button class="btn" onclick="toggleNumbers(this, 97, 'pike (long spear)')">97</button>
+        <button class="btn" onclick="toggleNumbers(this, 98, 'puff (smoke rings)')">98</button>
+        <button class="btn" onclick="toggleNumbers(this, 99, 'pipe')">99</button>
+        <button class="btn" onclick="toggleNumbers(this, 100, 'tissues (Kleenex  box)')">100</button>  
+       
+        <p>Even more numbers:</p>
+        <button class="btn" onclick="toggleNumbers(this, 130, 'Tums')">130</button>
+        <button class="btn" onclick="toggleNumbers(this, 140, 'tears')">140</button>
+        <button class="btn" onclick="toggleNumbers(this, 149, 'trap')">149</button>
+        <button class="btn" onclick="toggleNumbers(this, 251, 'inlet')">251</button>
+        <button class="btn" onclick="toggleNumbers(this, 260, 'gnashes (multiple gnashing teeth)')">260</button>
+        <button class="btn" onclick="toggleNumbers(this, 257, `<span style='color:red'>n</span>o<span style='color:red'>l</span>oc<span style='color:red'>k</span> (e.g., open padlock, others: noluck, unlock)`)">257</button>
+        <button class="btn" onclick="toggleNumbers(this, 275, 'nickle')">275</button>
+        <button class="btn" onclick="toggleNumbers(this, 310, 'mites')">310</button>
+        <button class="btn" onclick="toggleNumbers(this, 314, 'meteor')">314</button>
+        <button class="btn" onclick="toggleNumbers(this, 321, 'mount')">321</button>
+        <button class="btn" onclick="toggleNumbers(this, 431, 'ramit')">431</button>
+        <button class="btn" onclick="toggleNumbers(this, 539, 'limit')">539</button>
+        <button class="btn" onclick="toggleNumbers(this, 601, 'Shasta')">601</button>
+        <button class="btn" onclick="toggleNumbers(this, 847, 'fork')">847</button>
+        <button class="btn" onclick="toggleNumbers(this, 941, 'parrot')">941</button>
+        <button class="btn" onclick="toggleNumbers(this, 927, 'pink')">927</button>
+        <button class="btn" onclick="toggleNumbers(this, 989, 'puffup')">989</button>
+
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+
+ <!-- <div class="w3-row w3-padding-64">
+    <div id="div3e" class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Longer numbers</h1>
+      
+       <p>Link is option. try to make up 3 digit blocks if possible</p>
+        <button class ="w3-btn w3-black btn-showshow" onclick="ShowNumbers('div3e')">Show All Numbers</button>
+        <button class ="w3-btn w3-black btn-showshow" onclick="ShowImages('div3e')">Show All Images</button>
+          <button class="btn" onclick="toggleNumbers(this, 100, 'tennis (tennis racket)')">100</button>
+          <button class="btn" onclick="toggleNumbers(this, 200, 'Nordic skiing (ski)')">200</button>
+          <button class="btn" onclick="toggleNumbers(this, 300, 'motorcross (motorcycle)')">300</button>
+          <button class="btn" onclick="toggleNumbers(this, 400, 'rugby (rugby ball)')">400</button>
+          <button class="btn" onclick="toggleNumbers(this, 500, 'lacrosse (lacrosse stick)')">500</button>
+          <button class="btn" onclick="toggleNumbers(this, 600, 'shot put (shot put ball)')">600</button>
+          <button class="btn" onclick="toggleNumbers(this, 700, 'kayaking (kayak)')">700</button>
+          <button class="btn" onclick="toggleNumbers(this, 800, 'goal posts')">800</button>
+          <button class="btn" onclick="toggleNumbers(this, 900, 'ping pong (paddle)')">900</button>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div> -->
+
+
+
+    <!-- <h4>Number extensions 100s(planets)</h4>
+          <div >
+          <button class ="w3-btn w3-black btn-showshow" onclick="ShowNumbers2()">Show All Numbers</button>
+          <button id="btnss" class ="w3-btn w3-black btn-showshow" onclick="ShowImages2('btnss')">Show All Images</button>
+            <button class="btn" onclick="toggleNumbers(this, 100, 'tennis (yellow tennis ball)')">100</button>
+            <button class="btn" onclick="toggleNumbers(this, 200, 'Nordic skiing (ski)')">200</button>
+            <button class="btn" onclick="toggleNumbers(this, 300, 'motorcross (motorcycle)')">300</button>
+            <button class="btn" onclick="toggleNumbers(this, 400, 'rugby (rugby ball)')">400</button>
+            <button class="btn" onclick="toggleNumbers(this, 500, 'lacrosse (lacrosse stick)')">500</button>
+            <button class="btn" onclick="toggleNumbers(this, 600, 'shot put (shot put ball)')">600</button>
+            <button class="btn2" style="padding-left: 28px;" onclick="toggleNumbers2(this, 700, '<p>Uranus <img src=images/7uranus.jpg  width=50 height=50> </p>')">700</button>
+            <button class="btn2" style="padding-left: 28px;" onclick="toggleNumbers2(this, 800, '<p>Neptune <img src=images/8neptune.jpg  width=50 height=50> </p>')">800</button>
+            <button class="btn2" style="padding-left: 28px;" onclick="toggleNumbers2(this, 900, '<p>Pluto <img src=images/9pluto.jpg  width=50 height=50> </p>')">900</button>
+         </div>   -->
+
+        <!-- Cars volkswagon, electra, station waggon. thunder bird, corvette, explorwer toyota, surburban, truck-->
+         <!-- Truck  -->
+
+
+        <!-- <h4>Number extensions 1000s(colors)</h4>
+          <button class="btn" onclick="toggleNumbers(this, 1000, 'tan')">1000</button>
+          <button class="btn" onclick="toggleNumbers(this, 2000, 'neon blue')">200</button>
+          <button class="btn" onclick="toggleNumbers(this, 3000, 'maroon')">3000</button>
+          <button class="btn" onclick="toggleNumbers(this, 4000, 'red')">4000</button>
+          <button class="btn" onclick="toggleNumbers(this, 5000, 'lemon yellow')">5000</button>
+          <button class="btn" onclick="toggleNumbers(this, 6000, 'shell (off white)')">6000</button>
+          <button class="btn" onclick="toggleNumbers(this, 7000, 'khaki')">7000</button>
+          <button class="btn" onclick="toggleNumbers(this, 8000, 'fueshsia (purple)')">8000</button>
+          <button class="btn" onclick="toggleNumbers(this, 9000, 'pink')">9000</button> -->
+
+ 
+        <!--  <div class="w3-row w3-padding-64">
+    <div id="divcards" class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Cards</h1>
+        <button class ="w3-btn w3-black btn-showshow" onclick="ShowNumbers('divcards')">Show All Numbers</button>
+        <button class ="w3-btn w3-black btn-showshow" onclick="ShowImages('divcards')">Show All Images</button>
+        <p style="padding-left: 16px">Suit order CHSD ("chased"</p>
+        <p style="padding-left: 16px">Aces are represented by 1 (t)</p>
+        <p style="padding-left: 16px">10s are represented by 0 (s)</p>
+        <h4 class="w3-text-teal" style="padding-left: 16px">Clubs</h4>
+          <button class="btn" onclick="toggleNumbers(this, 'C1 (Ace)', 'cat')">C1 (Ace)</button>
+          <button class="btn" onclick="toggleNumbers(this, 'C2', 'can')">C2</button>
+          <button class="btn" onclick="toggleNumbers(this, 'C3', 'c_m')">C3</button>
+          <button class="btn" onclick="toggleNumbers(this, 'C4', 'car')">C4</button>
+          <button class="btn" onclick="toggleNumbers(this, 'C5', 'coal')">C5</button>
+          <button class="btn" onclick="toggleNumbers(this, 'C6', 'cash')">C6</button>
+          <button class="btn" onclick="toggleNumbers(this, 'C7', 'cake')">C7</button>
+          <button class="btn" onclick="toggleNumbers(this, 'C8', 'coffee')">C8</button>
+          <button class="btn" onclick="toggleNumbers(this, 'C9', 'cap')">C9</button>
+          <button class="btn" onclick="toggleNumbers(this, 'C10', 'case (coke crate)')">C10</button>
+          <button class="btn" onclick="toggleNumbers(this, 'CJ', 'bottle of Jack Daniels with a club for a stopper')">CJ</button>
+          <button class="btn" onclick="toggleNumbers(this, 'CQ', 'queen holding a club for her sceptre')">CQ</button>
+          <button class="btn" onclick="toggleNumbers(this, 'CK', 'king holding a club for his sceptre')">CK</button>
+          <h4 class="w3-text-teal" style="padding-left: 16px">Hearts</h4>
+          <button class="btn" onclick="toggleNumbers(this, 'H1 (Ace)', 'hat')">H1 (Ace)</button>
+          <button class="btn" onclick="toggleNumbers(this, 'H2', 'hen')">H2</button>
+          <button class="btn" onclick="toggleNumbers(this, 'H3', 'ham')">H3</button>
+          <button class="btn" onclick="toggleNumbers(this, 'H4', 'hare')">H4</button>
+          <button class="btn" onclick="toggleNumbers(this, 'H5', 'hail')">H5</button>
+          <button class="btn" onclick="toggleNumbers(this, 'H6', 'hash')">H6</button>
+          <button class="btn" onclick="toggleNumbers(this, 'H7', 'hawk')">H7</button>
+          <button class="btn" onclick="toggleNumbers(this, 'H8', 'hoof')">H8</button>
+          <button class="btn" onclick="toggleNumbers(this, 'H9', 'hoop')">H9</button>
+          <button class="btn" onclick="toggleNumbers(this, 'H10', 'hose')">H10</button>
+          <button class="btn" onclick="toggleNumbers(this, 'HJ', 'bottle of Jack Daniels with a heart beating inside')">HJ</button>
+          <button class="btn" onclick="toggleNumbers(this, 'HQ', 'queen bleeding from her heart')">HQ</button>
+          <button class="btn" onclick="toggleNumbers(this, 'HK', 'king bleeding from his heart')">HK</button>
+          <h4 class="w3-text-teal" style="padding-left: 16px">Spades</h4>
+          <button class="btn" onclick="toggleNumbers(this, 'S1 (Ace)', 'suit')">S1 (Ace)</button>
+          <button class="btn" onclick="toggleNumbers(this, 'S2', 'sun')">S2</button>
+          <button class="btn" onclick="toggleNumbers(this, 'S3', 'sum')">S3</button>
+          <button class="btn" onclick="toggleNumbers(this, 'S4', 'soar')">S4</button>
+          <button class="btn" onclick="toggleNumbers(this, 'S5', 'seal')">S5</button>
+          <button class="btn" onclick="toggleNumbers(this, 'S6', 'sash')">S6</button>
+          <button class="btn" onclick="toggleNumbers(this, 'S7', 'sack')">S7</button>
+          <button class="btn" onclick="toggleNumbers(this, 'S8', 'safe')">S8</button>
+          <button class="btn" onclick="toggleNumbers(this, 'S9', 'soap')">S9</button>
+          <button class="btn" onclick="toggleNumbers(this, 'S10', 'seuss (Cat in the hat)')">S10</button>
+          <button class="btn" onclick="toggleNumbers(this, 'SJ', 'bottle of Jack Daniels broken with a spade')">SJ</button>
+          <button class="btn" onclick="toggleNumbers(this, 'SQ', 'queen with spades for hands')">SQ</button>
+          <button class="btn" onclick="toggleNumbers(this, 'SK', 'king spades for hands')">SK</button>
+          <h4 class="w3-text-teal" style="padding-left: 16px">Diamonds</h4>
+          <button class="btn" onclick="toggleNumbers(this, 'D1 (Ace)', 'dot')">D1 (Ace)</button>
+          <button class="btn" onclick="toggleNumbers(this, 'D2', 'dune')">D2</button>
+          <button class="btn" onclick="toggleNumbers(this, 'D3', 'dam')">D3</button>
+          <button class="btn" onclick="toggleNumbers(this, 'D4', 'door')">D4</button>
+          <button class="btn" onclick="toggleNumbers(this, 'D5', 'doll')">D5</button>
+          <button class="btn" onclick="toggleNumbers(this, 'D6', 'dish')">D6</button>
+          <button class="btn" onclick="toggleNumbers(this, 'D7', 'duck')">D7</button>
+          <button class="btn" onclick="toggleNumbers(this, 'D8', 'deaf')">D8</button>
+          <button class="btn" onclick="toggleNumbers(this, 'D9', 'dip (food dip)')">D9</button>
+          <button class="btn" onclick="toggleNumbers(this, 'D10', 'dose (syringe of med)')">D10</button>
+          <button class="btn" onclick="toggleNumbers(this, 'DJ', 'bottle of Jack Daniels full of diamonds')">DJ</button>
+          <button class="btn" onclick="toggleNumbers(this, 'DQ', 'queen with a big diamond in her mouth')">DQ</button>
+          <button class="btn" onclick="toggleNumbers(this, 'DK', 'king with a diamond in her mouth')">DK</button>
+
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>  -->
+
+
+
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+
+
+
+</script>
+
+</body>
+</html>

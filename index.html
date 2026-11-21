@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CPR</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- My stuff -->
+<link rel="stylesheet" href="shared.css">
+<script src="shared.js" defer></script>
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+
+
+</style>
+</head>
+<body>
+<!-- Scroll button -->
+<button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <!-- Menu button -->
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <!--Header Title: Removes underline from <a/>, removes hand cursor when hover over with mouse pointer, adjust title wording by width -->
+    <a href="#" class="w3-bar-item w3-hide-small  w3-hide-medium" style="text-decoration: none; cursor: default;">Memory System Techniques</a>
+    <a href="#" class="w3-bar-item  w3-hide-large" style="text-decoration: none; cursor: default;">Memory Systems Techniques</a>
+  </div>
+</div>
+
+<!-- Sidebar with Menu -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn1 selectedbtn" href="index.html">Introduction</a>
+  <a class="w3-bar-item w3-button w3-hover-black sectionbtn" href="javascript:void(0)"><b>I. Memory System Techniques</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn1 " href="memorysystems.html">Overview</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn1" href="overviewsampleproblem.html">Basic Concepts/Fish Baits Algorithm</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="mindmapping.html">1. Mind Mapping</a> 
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="visualmnemonics.html">2. Visual Mnemonics</a> 
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn3" href="numbers.html">~ Visual Numbers</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn3" href="numbersmore.html">~ More Visual Numbers</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn3" href="javascript:void(0)">~ Visual Letters</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="links.html">3. Links</a>  
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="methodofloci.html">4. Method of Loci</a> 
+   
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" style="font-size: 17px;" href="spacedrepetition.html">5. Spaced Repetition</a>  
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn1 " href="whatnext.html">What Next?</a>
+  
+  
+  <!-- <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="numbersshaper.html">Shaper System</a> -->
+  <!-- <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="numbersrhyme.html">Rhyme System</a> -->
+  <!-- <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="numbersmajor.html">Major System</a> -->
+  <!-- <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="numbersmore.html">More Numbers</a> -->
+  <a class="w3-bar-item w3-button w3-hover-black " href="javascript:void(0)"><b>II. Basic Life Support</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="blsoverview.html">Overview BLS</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="javascript:void(0)">Mind Mapping</a>    
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn " href="adultbls.html">Visual Mnemonics</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="javascript:void(0)">Initial Assessment</a>  
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="javascript:void(0)">Unresponsive Stable</a>  
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="javascript:void(0)">Respiratory Arrest</a>  
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="javascript:void(0)">Cardiac Arrest</a>  
+  <!-- <a class="w3-bar-item w3-button w3-hover-black sectionbtn" href="javascript:void(0)"><b>Adult Basic Life Support</b></a> -->
+ 
+   <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="blspreparedness.html">Preparedness</a>  
+  <a class="w3-bar-item w3-button w3-hover-black sectionbtn" href="javascript:void(0)"><b>Pediatric Basic Life Support</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn " href="pediatricbls.html">Visual Mnemonics</a>
+  <a class="w3-bar-item w3-button w3-hover-black " href="javascript:void(0)"><b>III. Foreign Body Airway Obstruction</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="fbaooverview.html">Overview</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="javascript:void(0)">Mind Mapping</a>    
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn " href="javascript:void(0)">Visual Mnemonics</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="javascript:void(0)"><b>IV. Etc.</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn1" href="moreuses.html">More Uses</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn1" href="questionanswer.html">BLS Questions/Answers</a>
+  <!-- <a class="w3-bar-item w3-button w3-hover-black" href="xtest1.html">TESTS1</a> -->
+  <!-- <a class="w3-bar-item w3-button w3-hover-black" href="xtest2.html">TESTS2</a> -->
+  
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Introduction to Memory System Techniques/Basic Life Support Algorithms</h1>
+      <p>When you see or hear of someone performing what seems to be incredible feats of memory such as memorizing a roomful of peoples names or cards that have been played in a card game they are almost always using some form of memory system technique. Memory system techniques are not new and originated in ancient times (Lorayne and Lucas chapter 1).</p> 
+      <p>Memory system techniques such as the ones coverd in this website are a hidden gem for remembering many things in our daily lives such as grocery lists, peoples names, phone numbers, speeches and many other useful information. Some have questioned why memory system techniques are not at least introduced in someway in our education process. </p>  
+      <p>In addition to daily uses memory sytem techniques can help foster long term memory of important and complex information. One example of such information are the <a  class="hyperlink-blue" href="https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms" target="_blank" rel="noopener noreferrer">2025 American Heart Association Guidelines for Cardiopulmonary Resuscitation and Emergency Cardiovascular Care Algorithms</a>. Good recall of these algorithms can not only be helpful in passing ones basic life support certification but actually retaining the information long term in the event it is critically needed.</p>
+      </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+    <div class="w3-row ">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Intents of this Website</h2>
+       <p>As  alluded to by the website title there are  really two intents of this website:</p>
+        <ul style="list-style-type:disc;">
+          <li>The first intent is an introduction to memory system techniques. More thorogh books and websites on memory system techniques are available but enough different aspects of several memory system techniques are covered to be a good starting point of one way of using memory system techniques.</li>
+          <li>The second intent is demonstrating how memory system techniques can be used to memorize more complex information in the form of <i>Basic Life Support</i> algorithms which now also include <i>Foreign Body Airway Obstruction</i> algorithms. Hopefully if used the process can help one retain the information in the event it is critically needed.</li>
+        </ul>
+        <p>To try to meet these intents this website will start with a review of <i>Memory System Techniques</i> and use a pratice algorithm <i>Fish Baits</i> to demonstrate the concepts and memorize the algorithm. Then the same concepts will be used to memorize the components of the <i>Basic Life Support</i>algorithms, <i>Basic Life Support</i> and <i>Foreign Body Airway Obstruction</i>. </p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">References</h1>
+     
+      <p></p>
+        <ul style="list-style-type:decimal;">
+          <li><cite>The Memory Book: The Classic Guide to Improving Your Memory at Work, at School, and at Play </cite> by Harry Lorayne (Author), Jerry Lucas (Author) 1974.
+            <ul style="list-style-type:none;">
+              <p>When I first started with the idea of this website I listed multiple books and websites I have read through the years. I began to realize that the majority of sourses of information on memory system techniques share very much of the same information with some minor variations and have actually done so since ancient times. To keep things simple I am only going to refernce one source which is the first book I read on the subject years ago. This book was copyrighted in 1974 and is still revalant today. One can not go wrong reading this book before, during or after visiting this website as well as a starting point before reading other books or websites on memory system techniques. If you stay interested in memory system techniques further study through available books and websites is easy to find. I find that even though the information is to a large part repeated many are good reads and will still intermitantly pickup a useful idea that was not found elsewhere as many people, including myself, customize some components of memory systems in a way that works best for them.</p>
+            </ul>
+          </li>
+          <li><a  class="hyperlink-blue" href="https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms" target="_blank" rel="noopener noreferrer">2025 American Heart Association Guidelines for Cardiopulmonary Resuscitation and Emergency Cardiovascular Care Algorithms</a></li>
+         
+        </ul>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+
+
+  
+<!-- END MAIN -->
+</div>
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+
+
+
+</script>
+
+</body>
+</html>

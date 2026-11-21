@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Problem</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- My stuff -->
+<link rel="stylesheet" href="shared.css">
+<script src="shared.js" defer></script>
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+
+
+</style>
+</head>
+<body>
+  <!-- Scroll button -->
+<button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <!-- Menu button -->
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <!--Header Title: Removes underline from <a/>, removes hand cursor when hover over with mouse pointer, adjust title wording by width -->
+    <a href="#" class="w3-bar-item w3-hide-small  w3-hide-medium" style="text-decoration: none; cursor: default;">Cardiopulmonary Resuscitation with Memory Methods</a>
+    <a href="#" class="w3-bar-item  w3-hide-large" style="text-decoration: none; cursor: default;">CPR with Memory Methods</a>
+  </div>
+</div>
+
+<!-- Sidebar with Menu -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button" href="index.html">Introduction</a>
+  <a class="w3-bar-item w3-button sectionbtn" href="memorymethods.html"><b>Memory Systems</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn selectedbtn" href="problem.html">Example Problem</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="memorysystems.html">Memory Systems</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="numbers.html">Numbers</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="#">Problme solved!</a>
+  <a class="w3-bar-item w3-button w3-hover-black w3-xlarge" href="adultbls.html"><b>Adult Basic Life Support</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="#">Mind Map</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="#">Images</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="#">Memory Palace</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="#">Link It Together</a>
+  <a class="w3-bar-item w3-button w3-hover-black w3-xlarge" href="#"><b>Other Uses</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="#">Lists</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="#">Speeches</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="#">ToDo</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="#">Phone Numbers</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="xtest1.html">TESTS1</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="xtest2.html">TESTS2</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Pediatric BLS</h1>
+      <p>In the example problem <b>Fish Bait flowchart</b> even though it is brief it is also complex with mutiple branches as well as numbers. It would be hard to commit to long term memory without sometype of memory method. Mulitiple types of memory methods will be used: subsitute words/images, number images, memory links, memory map and memory places. It sounds like a lot but once the concepts are mastered memoprizing problems such as this can be done pretty on the fly and fairly quickly but more importantly which much better recall from memory. </p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+<!-- MENTAL IMAGES -->
+  <div class="w3-row ">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Mental images</h2>
+      <p><a class="hyperlink-blue"  href="#">Bradycardia</a> snail shell over a hearts</p>
+
+      <!-- RESPIRATORY ARREST IMAGES------------------------------------------------>
+    <ul style="list-style-type:none;">
+      <li>
+          <h3 class="w3-text-teal">Respiratory arrest images:</h3>
+          <ul style="list-style-type:none;">
+            <li>
+              <p><b><a class="hyperlink-blue"  href="#">Respiratory arrest</a>:</b> A pair of deflated purple lungs in a crib.</p> 
+               </p><b><a class="hyperlink-blue"  href="#">Respiratory resuscitation</a>:</b> You need to be able to mentally visualize 5 images lined up in a row which are lower case <span style= 'color: #FF0000;'>a</span>,<span style= 'color: #FF0000;'>b</span>,<span style= 'color: #FF0000;'>c</span>,<span style= 'color: #FF0000;'>d</span> alphabet learning blocks and an <span style= 'color: #FF0000;'>ox with nails sticking out of hide</span> sitting and leaning back on the D block. </p>
+               <ul style="list-style-type:none;">
+                <li>
+                  <ul style="list-style-type:none;">
+                    <li>
+                      <p>The a block is for <b>"open <span style= 'color: #FF0000;'>a</span>irway"</b></p>
+                      <p>The b block is for <b>"give <span style= 'color: #FF0000;'>b</span>reaths every ___"</b></p>
+                      <p>The c block is for <b>"<span style= 'color: #FF0000;'>c</span>heck pulse every 2 minutes"</b></p>
+                      <p>The d block is for <b>"<span style= 'color: #FF0000;'>d</span>o CPR if ___"</b></p>
+                      <p>The <span style= 'color: #FF0000;'>ox with nails sticking out of hide</span> is for "<b>Give naloxone if possible opiod overdose</b>"</p>
+                    </li>
+                  </ul>                              
+                </p>We need to learn what these blocks represent strongly for 2 reasons. First they will be used again in adult basic life support except to foster the pediatric flowchart they will be upper case ABCD to highlight being used in the adult flowchart. Second if we know what they stand for all we have to do is add modifiers to them with mental images to define them in more detail. We will attach modifiers to the letters.</p>
+                <ul style="list-style-type:none;">
+                  <li>
+                    <p>The <span style= 'color: #FF0000;'>a</span> is the same for both adult and pediatric basic life support and has no modifiers.</p>
+                    <p>The <span style= 'color: #FF0000;'>b</span> block will  have a mental image modifier added to indicate how frequent to give breaths which does differ between adult and pediatric basic life support.</p>
+                    <p>The <span style= 'color: #FF0000;'>c</span> block modifier will have the same mental image modifier for both  adult and pediatric basic life support for when to check pulse. It will be a cuckoo clock with Noah popping out saying cuckcoo (Noah if using the major system, a swan if using the shaper system, shoe if using the rhyming system). The cuckcoo clock will replace the straight vertical part of both the lower case and upper case versions of the letter c.</p>
+                    <p>The <span style= 'color: #FF0000;'>d</span> block will have different mental image modifiers between adult and pediatric basic life support as to when to do CPR.</p>
+                    <p>The <span style= 'color: #FF0000;'>ox with nails sticking out of hide</span> is the same for both adult and pediatric basic life support and has no modifiers.</p>
+                    <p>To help recall note that only the b and d blocks will have different mental image modifiers for adult and pediatric basic life support.</p>
+                  </li>
+                </ul>
+                <p><span style='font-size:20px; color: #FF0000;'>&#9733;</span>  It is important to practice what the above blocks represent before you go further. You should be able to mentally visualize the images lined up in a row and as you mentally move down the line quickly say "<b>Open airway</b>" | "<b>Give breaths every</b>" | "<b>Check pulse every 2 minutes</b>" | "<b>Do CPR if</b>" | "<b>Give naloxone if possible opiod overdose</b>". If you can foster a good recall of these you will be much more likely to perform if ever needed in an emergency when things can be stressful.</p> 
+                </li>
+               </ul>               
+              
+              <!-- </p>  -->
+              <p><b>every 2-3 seconds </b>(modifier for "give breaths every ___ seconds"")<b>:</b> A stopwatch (seconds) with two start/stop buttons on top. The first button is replaced by Noah (seconds) sticking up and then second button is replaced by a lawn mower (3). The number 2 is Noah if using the major system, glue if using the shaper system, a tree if using the rhyming system. The number 3 is mow if using the major system, lips if using the shaper system, a tree if using the rhyming system.</p> 
+              <p>Test</p>
+            </li>
+          </ul>
+      </li>
+    </ul>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+ 
+
+  
+<!-- END MAIN -->
+</div>
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+
+
+
+</script>
+
+</body>
+</html>

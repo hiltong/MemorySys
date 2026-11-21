@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CPR</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- My stuff -->
+<link rel="stylesheet" href="shared.css">
+<script src="shared.js" defer></script>
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+
+
+</style>
+</head>
+<body>
+  <!-- Scroll button -->
+<button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <!-- Menu button -->
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <!--Header Title: Removes underline from <a/>, removes hand cursor when hover over with mouse pointer, adjust title wording by width -->
+    <a href="#" class="w3-bar-item w3-hide-small  w3-hide-medium" style="text-decoration: none; cursor: default;">Learning CPR with Visual Mnemonics</a>
+    <a href="#" class="w3-bar-item  w3-hide-large" style="text-decoration: none; cursor: default;">Basic CPR with Visual Mnemonics</a>
+  </div>
+</div>
+
+<!-- Sidebar with Menu -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black sectionbtn" href="javascript:void(0)"><b>Memory Systems</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="index.html">Introduction</a>  
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="memorysystems.html">Visual Mnemonics</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="numbers.html">Visual Numbers</a>
+  <!-- <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="numbersshaper.html">Shaper System</a> -->
+  <!-- <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="numbersrhyme.html">Rhyme System</a> -->
+  <!-- <a class="w3-bar-item w3-button w3-hover-black indentedbtn2" href="numbersmajor.html">Major System</a> -->
+  <!-- <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="numbersmore.html">More Numbers</a> -->
+
+  <a class="w3-bar-item w3-button w3-hover-black sectionbtn" href="javascript:void(0)"><b>Basic Life Support</b></a>
+   <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="blsoverview.html">Overview</a>  
+  <!-- <a class="w3-bar-item w3-button w3-hover-black sectionbtn" href="javascript:void(0)"><b>Adult Basic Life Support</b></a> -->
+  <!-- <a class="w3-bar-item w3-button w3-hover-black indentedbtn " href="bls.html">Visual Mnemonics</a> -->
+  <a class="w3-bar-item w3-button w3-hover-black " href="javascript:void(0)"><b>Foreign Body Airway Obstruction</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn selectedbtn" href="fbaooverview.html">Overview</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="javascript:void(0)">Mind Mapping</a>    
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn " href="javascript:void(0)">Visual Mnemonics</a> 
+  
+
+  <a class="w3-bar-item w3-button w3-hover-black w3-xlarge" href="moreuses.html"><b>More Uses</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="xtest1.html">TESTS1</a>
+  <a class="w3-bar-item w3-button w3-hover-black indentedbtn" href="xtest2.html">TESTS2</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Overview Foreign Body Airway Obstruction</h1>
+      <p>Management of foreign-body airway obstruction has been integrated with basic life support as cardiopulmonary resuscitation is begun if a person with a foreign-body airway obstruction becomes unresponsive.</p>
+
+      <p>As noted in the <i>Basic Life Support Overview</i> section the initial knowledge conveyed by the American Heart Association is in a series of algorithms. The main purpose of this website is to help you memorize these algorithms so that you can use them in an emergency situation by the use of memory systems. Of course there is much more to being able to effectively provide basic life support than just memorizing the algorithms. The section on <i>Preparedness</i> discusses this further. </p>
+
+
+      <p>At the <a href="https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms" target="_blank" rel="noopener noreferrer">Algorithms: 2025 American Heart Association Guidelines for Cardiopulmonary Resuscitation and Emergency Cardiovascular Care</a> website the are the following foreign body airway obstruction algoithms are listed under basic life support:</p> 
+          <ul style="list-style-type:disc;">
+            <li>Infant Foreign Body Airway Obstruction</p></li>
+            <li>Child Foreign Body Airway Obstruction</p></li>
+            <li>Adult Foreign-Body Airway Obstruction Algorithm</p></li>
+          </ul>
+     
+      The age ranges for the foreign body airway obstruction algorithms are defined as follows:
+        <ul style="list-style-type:disc;">
+          <li>Infant: Less than one year old</li>
+          <li>Child: One year of age to signs of puberty (breast development in females and presence axiallary hair in males)</li>        
+          <li>Adult: Signs of puberty and beyond (breast development in females and presence axiallary hair in males)</li>
+        </ul>    
+      </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+
+ <!-- <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Ways to be prepared to use basic cardiopulmonary resuscitation </h1>
+      
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div> -->
+
+  
+
+  
+<!-- END MAIN -->
+</div>
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
