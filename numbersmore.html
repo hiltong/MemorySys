@@ -21,6 +21,25 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   bottom: 0;
   height: inherit;
 }
+
+.link-numbergroup {
+  display: inline-block;
+  padding: 8px 16px;
+  color: white;
+  text-decoration: none;
+  width: 90px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align:center;
+}
+.link-numbergroup:hover {
+ box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+
+
 </style>
 
 </head>
@@ -70,13 +89,19 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
  <div class="w3-row w3-padding-64">
     <div id="divmnumim" class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">More Numbers</h1>
+      <h1 id="0-99" class="w3-text-teal">More Numbers</h1>
        <!-- <h4>Numbers/Image</h4> -->
         <p>Using the <i>Major System</i>  these are numbers 0-100 that I use as premade mental visual images. You can practice reviewing by clicking on the number (or image if showing) to see the corresponding image or number. Remember the images are what I personally use so use an image that works best for you.</p>
         <p>Some memory experts are reported to have a list of a 1000 or more premade numbers. For longer numbers you encounter you can link premade numbers. By linking premade numbers together you can quickly and accurately remember a long digit number. You can also make up a number for the occasion. For example if you are faced with the number 1020 you could picture toes(10) being stuck up a nose(20) or you could use a word such as Tysons(1020) which to me is a mental image of a Tysons frozen dinner.</P>
-        <button class ="w3-btn w3-black btn-showshow" onclick="ShowNumbers('divmnumim')">Show All Numbers</button>
-        <button class ="w3-btn w3-black btn-showshow" onclick="ShowImages('divmnumim')">Show All Images</button>
-        <!-- <button class="btn" onclick="toggleNumbers(this, 0, 'saw')">0</button> -->
+        
+        <a href="#0-99" class="w3-teal link-numbergroup">0-99</a>
+        <a href="#100-199" class="w3-teal link-numbergroup">100-199</a>
+        <a href="#200-299" class="w3-teal link-numbergroup">200-299</a>
+
+        <hr class="separator">
+        <h5>Numbers 0-99</h5>
+        <button class ="w3-btn w3-teal btn-showshow" style="border: 0px" onclick="ShowNumbers('divmnumim')">Show All Numbers</button>
+        <button class ="w3-btn w3-teal btn-showshow" style="border: 0px" style="border: 0px" onclick="ShowImages('divmnumim')">Show All Images</button>
         <button class="btn" onclick="toggleNumbers(this, 0, `<span style='color:red'>s</span>aw (e.g., hand saw, others: sea, sew)`)">0</button>
         <!-- <button  class="btn" onclick="toggleNumbers(this, '00', 'see-saw')">00</button> -->
         <button class="btn" onclick="toggleNumbers(this, '00', `<span style='color:red'>s</span>ee<span style='color:red'>s</span>aw (e.g., playground seesaw, others: saws, seus)`)">00</button>
@@ -100,7 +125,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         <button class="btn" onclick="toggleNumbers(this, 7, 'key')">7</button>
         <button class="btn" onclick="toggleNumbers(this, 8, 'fee')">8</button>
         <button class="btn" onclick="toggleNumbers(this, 9, 'paw')">9</button>
-        <button class="btn" onclick="toggleNumbers(this, 10, 'toes')">10</button>
+        <!-- <button class="btn" onclick="toggleNumbers(this, 10, 'toes')">10</button> -->
+        <button class="btn" onclick="toggleNumbers(this, 10, `<span style='color:red'>t</span>i<span style='color:red'>ss</span>ue (single Kleenex)`)"`>10</button>   
         <button class="btn" onclick="toggleNumbers(this, 11, 'tit')">11</button>
         <button class="btn" onclick="toggleNumbers(this, 12, 'tin')">12</button>
         <button class="btn" onclick="toggleNumbers(this, 13, 'tom')">13</button>
@@ -190,9 +216,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         <button class="btn" onclick="toggleNumbers(this, 97, 'pike (long spear)')">97</button>
         <button class="btn" onclick="toggleNumbers(this, 98, 'puff (smoke rings)')">98</button>
         <button class="btn" onclick="toggleNumbers(this, 99, 'pipe')">99</button>
-        <button class="btn" onclick="toggleNumbers(this, 100, 'tissues (Kleenex  box)')">100</button>  
-       
-        <p>Even more numbers:</p>
+
+        <!-- --------------------------------------------------------------------------------------------------------------------- -->
+        <hr id="100-199" class="separator">
+        <h5>Numbers 100-199</h5>
+        <a href="#0-99" class="w3-teal link-numbergroup">0-99</a>
+        <a href="#100-199" class="w3-teal link-numbergroup">100-199</a>
+        <a href="#200-299" class="w3-teal link-numbergroup">200-299</a>
         <!-- <span style='color:red'>m</span> -->
         <!-- <span style='color:red'>n</span> -->
          <!-- <span style='color:red'>r</span> -->
@@ -202,8 +232,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         <!-- <span style=`color:yellowgreen`>d</span> -->
         <!-- <span style=`color:yellowgreen`>z</span> -->
         
-
-
+        <button class="btn" onclick="toggleNumbers(this, 100, `<span style='color:red'>t</span>i<span style='color:red'>ss</span>ue<span style='color:red'>s</span> (Kleenex  box)`)"`>100</button>   
         <button class="btn" onclick="toggleNumbers(this, 101, `<span style='color:red'>t</span>oa<span style='color:red'>st</span>`)">101</button>
         <button class="btn" onclick="toggleNumbers(this, 102, `<span style='color:red'>T</span>y<span style='color:red'>s</span>o<span style='color:red'>n</span> (Mike)`)">102</button>
         <button class="btn" onclick="toggleNumbers(this, 103, `<span style='color:red'>t</span>wo<span style='color:red'>s</span>o<span style='color:red'>m</span>e`)">103</button>
@@ -221,6 +250,12 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
       
         <button class="btn" onclick="toggleNumbers(this, 140, 'tears')">140</button>
         <button class="btn" onclick="toggleNumbers(this, 149, 'trap')">149</button>
+        <hr id="200-299" class="separator">
+        <h5>Numbers 200-299</h5>
+        <a href="#0-99" class="w3-teal link-numbergroup">0-99</a>
+        <a href="#100-199" class="w3-teal link-numbergroup">100-199</a>
+        <a href="#200-299" class="w3-teal link-numbergroup">200-299</a>
+
         <button class="btn" onclick="toggleNumbers(this, 251, 'inlet')">251</button>
         <button class="btn" onclick="toggleNumbers(this, 260, 'gnashes (multiple gnashing teeth)')">260</button>
         <button class="btn" onclick="toggleNumbers(this, 257, `<span style='color:red'>n</span>o<span style='color:red'>l</span>oc<span style='color:red'>k</span> (e.g., open padlock, others: noluck, unlock)`)">257</button>
